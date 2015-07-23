@@ -1,0 +1,362 @@
+<a id="FeelingRational"/>
+<h2><a href="http://lesswrong.com/lw/hp/feeling_rational/?all=true">Feeling Rational</a></h2><a href="summary.html#FeelingRational_post_summary">Summary</a> - <a href=".html#">Next Post</a> - <a href="#FeelingRational_comments">Comments</a><br><br>
+<span class="author"> <span class="hide-text">Post author:</span> <a id="author_t3_hp" href="http://lesswrong.com/user/Eliezer_Yudkowsky/">Eliezer_Yudkowsky</a> </span><span class="date">26 April 2007 04:48AM</span><div class="md"> 
+ <div itemprop="description"> 
+  <div>
+   <p>A popular belief about "rationality" is that rationality opposes all emotion—that all our sadness and all our joy are automatically anti-logical by virtue of being <em>feelings.</em>&nbsp; Yet strangely enough, I can't find any theorem of probability theory which proves that I should appear ice-cold and expressionless.</p> 
+   <p>So is rationality orthogonal to feeling?&nbsp; No; our emotions arise from our models of reality.&nbsp; If I believe that my dead brother has been discovered alive, I will be happy; if I wake up and realize it was a dream, I will be sad.&nbsp; P. C. Hodgell said:&nbsp; "That which can be destroyed by the truth should be."&nbsp; My dreaming self's happiness was opposed by truth.&nbsp; My sadness on waking is rational; there is no truth which destroys it.</p> 
+   <p><a id="more"></a></p> 
+   <p>Rationality begins by asking how-the-world-is, but spreads virally to any other thought which depends on how we think the world is.&nbsp; By talking about your beliefs about "how-the-world-is", I mean anything you believe is out there in reality, anything that either does or does not exist, any member of the class "things that can make other things happen".&nbsp; If you believe that there is a goblin in your closet that ties your shoe's laces together, then this is a belief about how-the-world-is.&nbsp; Your shoes are real—you can pick them up.&nbsp; If there's something out there which can reach out and tie your shoelaces together, it must be real too, part of the vast web of causes and effects we call the "universe".</p> 
+   <p><em>Feeling angry at</em> the goblin who tied your shoelaces involves a state of mind that is not <em>just</em> about how-the-world-is.&nbsp; Suppose that, as a Buddhist or a lobotomy patient or just a very phlegmatic person, finding your shoelaces tied together didn't make you angry.&nbsp; This wouldn't affect what you expected to see in the world—you'd still expect to open up your closet and find your shoelaces tied together.&nbsp; Your anger or calm shouldn't affect your best guess here, because what happens in your closet does not depend on your emotional state of mind; though it may take some effort to think that clearly.</p> 
+   <p>But the angry feeling is tangled up with a state of mind that <em>is</em> about how-the-world-is; you become angry <em>because</em> you think the goblin tied your shoelaces.&nbsp; The criterion of rationality spreads virally, from the initial question of whether or not a goblin tied your shoelaces, to the resulting anger.</p> 
+   <p>Becoming more rational—arriving at better estimates of how-the-world-is—can diminish feelings <em>or intensify</em> them.&nbsp; Sometimes we run away from strong feelings by denying the facts, by flinching away from the view of the world that gave rise to the powerful emotion.&nbsp; If so, then as you study the skills of rationality and train yourself not to deny facts, your feelings will become stronger.</p> 
+   <p>In my early days I was never quite certain whether it was <em>all right</em> to feel things strongly—whether it was allowed, whether it was proper.&nbsp; I do not think this confusion arose only from my youthful misunderstanding of rationality.&nbsp; I have observed similar troubles in people who do not even aspire to be rationalists; when they are happy, they wonder if they are really allowed to be happy, and when they are sad, they are never quite sure whether to run away from the emotion or not.&nbsp; Since the days of Socrates at least, and probably long before, the way to appear cultured and sophisticated has been to never let anyone see you care strongly about anything.&nbsp; It's <em>embarrassing</em> to feel—it's just not done in polite society.&nbsp; You should see the strange looks I get when people realize how much I care about rationality.&nbsp; It's not the unusual subject, I think, but that they're not used to seeing sane adults who visibly care about <em>anything.</em></p> 
+   <p>But I know, now, that there's nothing wrong with feeling strongly.&nbsp; Ever since I adopted the rule of "That which can be destroyed by the truth should be," I've also come to realize "That which the truth nourishes should thrive."&nbsp; When something good happens, I am happy, and there is no confusion in my mind about whether it is rational for me to be happy.&nbsp; When <a href="http://yudkowsky.net/yehuda.html">something terrible happens</a>, I do not flee my sadness by searching for fake consolations and false silver linings.&nbsp; I visualize the past and future of humankind, the tens of billions of deaths over our history, the misery and fear, the search for answers, the trembling hands reaching upward out of so much blood, what we could become someday when we make the stars our cities, all that darkness and all that light—I know that I can never truly understand it, and I haven't the words to say.&nbsp; Despite all my philosophy I am still embarrassed to confess strong emotions, and you're probably uncomfortable hearing them.&nbsp; But I know, now, that it is rational to feel.</p> 
+   <p>&nbsp;</p>   
+  </div> 
+ </div> 
+</div>
+<hr>
+<hr>
+<a id="FeelingRational_comments">
+<a href=".html#">Skip Comments</a><br>
+<a name="e4n"/><span>ID: e4n</span>
+<span class="author gray"> <a id="author_t1_e4n" href="http://lesswrong.com/user/michael_vassar/">michael_vassar</a> </span>
+<span class="comment-date" time="1177537492"> 26 April 2007 07:44:52AM </span>
+<span class="votes " title="89% positive"> 14 points </span>
+<div id="body_t1_e4n" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>It seems to me that social consensus accepts expression of strong feelings by women, just not by men.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4o"/><span>ID: e4o</span>
+<span class="author gray"> <a id="author_t1_e4o" href="http://lesswrong.com/user/Eliezer_Yudkowsky/">Eliezer_Yudkowsky</a> </span>
+<span class="comment-date" time="1177539493"> 26 April 2007 08:18:13AM </span>
+<span class="votes " title="98% positive"> 49 points </span>
+<div id="body_t1_e4o" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Is it actually acceptance or just condescending dismissal?</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4p"/><span>ID: e4p</span>
+<span class="author gray"> <a id="author_t1_e4p" href="http://lesswrong.com/user/TGGP5/">TGGP5</a> </span>
+<span class="comment-date" time="1177541733"> 26 April 2007 08:55:33AM </span>
+<span class="votes " title="50% positive"> 0 points </span>
+<div id="body_t1_e4p" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Since they aren't part of the web of cause-and-effect (so they might be epiphenomenal), are norms impossible to be irrational about?</p>
+   <p>I don't think it's inevitable that having emotion causes irrationality, but I think there is a tendency for it to cloud your mind and restraining yourself is a good idea. Maybe after calmly examining things you can say to yourself "This appears to be an optimum situation in which to freak out".</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4q"/><span>ID: e4q</span>
+<span class="author gray"> <a id="author_t1_e4q" href="http://lesswrong.com/user/Robin_Hanson2/">Robin_Hanson2</a> </span>
+<span class="comment-date" time="1177551144"> 26 April 2007 11:32:24AM </span>
+<span class="votes " title="100% positive"> 12 points </span>
+<div id="body_t1_e4q" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>I agree that strong emotions can be very appropriate to many situations, but also think there is wisdom in the usual expectation that bias is correlated with strength of emotions. So it is crucial for us to develop better cues for distinguishing more versus less biased emotions.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4r"/><span>ID: e4r</span>
+<span class="author gray"> <a id="author_t1_e4r" href="http://lesswrong.com/user/michael_vassar/">michael_vassar</a> </span>
+<span class="comment-date" time="1177562847"> 26 April 2007 02:47:27PM </span>
+<span class="votes " title="100% positive"> 38 points </span>
+<div id="body_t1_e4r" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Well, at the very least women constitute half of society, it's certainly acceptance within that half. I actually think that it's actually acceptance more broadly though. Women are arguably not accepted my men in general, but in so far as they are accepted it is only in a few narrow domains, primarily science, engineering, and big business that women do best by adhering to men's norms. Actually though, emotional suppression is only normative among men in science, in the military, and in low status positions. Enthusiasm (irrational exuberance) is the ultimate business virtue. If one doesn't claim a level of confidence that can't possibly be justified one is simply not a contender for venture capital or angel investor money. In a hierarchy, one's not suitable for upper management or sales. Beyond that, almost all social elites are, in large measure, "emotional expression professionals". Actors and actresses are the most obvious example of this, but I would say that this is also true of athletes, artists, and other performers and entertainers, religious leaders, and politicians. Al Gore was dismissed with a characterization of "wooden". Hitler practiced his emotional expressions for hours in front of a mirror.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4s"/><span>ID: e4s</span>
+<span class="author gray"> <a id="author_t1_e4s" href="http://lesswrong.com/user/Matthew_C/">Matthew_C</a> </span>
+<span class="comment-date" time="1177566184"> 26 April 2007 03:43:04PM </span>
+<span class="votes " title="100% positive"> 1 point </span>
+<div id="body_t1_e4s" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Great points Michael. IE Clinton and "I feel your pain". . .</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4t"/><span>ID: e4t</span>
+<span class="author gray"> <a id="author_t1_e4t" href="http://lesswrong.com/user/Barkley__Rosser/">Barkley__Rosser</a> </span>
+<span class="comment-date" time="1177574980"> 26 April 2007 06:09:40PM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_e4t" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>This is one of those rare moments where the usually horribly heterodox economist, me, defends orthodox economic theory. So, looked at very closely, orthodox microeconomic says nothing at all about peoples' preferences themselves, which presumably involve their emotional reactions to various things. What is assumed is certain things about these preferences, that people know what they are, that they exhibit continuity, that they have a degree of internal consistency in the sense of exhibiting transitivity, and it also makes people behave more "rationall" and exhibit continuous demand functions if their utility functions exhibit convexity. So, rationality is not about what your preferences are or the degree to which they are based on one's emotions. They are that one know what they are, that they have a degree of internal coherence or consistency, and the, the biggie, that people actually act on the basis of their real preferences.</p>
+   <p>A lot of the problems regarding "irrationality" involve people behaving in internally consistent manners, especially over time. Behavioral economists are now arguing it out whether one should deal with this via multiple personality (or preference systems) models or approaches that stress focusing on "rationality" and keeping mind one's "real" preferences. Thus, hyperbolic discounting involves "time inconsistency." I want things now that I shall regret having wanted so much later. I eat the candy bar now and wake up fat later, etc. etc. Is this a combat of two preference systems or just "irrationality," People like Matthew Rabin who tend to use the latter approch, in fact say that the goal is to have people be "rational," to know their own real preferences and to act on them. If they really do not mind being fat, then go ahead and eat the candy bar. But in any case, it is perfectly OK either way to have the caring about being fat or not caring about being fat to be based on one's emotional reactions. One should undertand one's own emotional reactions. That is rationality.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4u"/><span>ID: e4u</span>
+<span class="author gray"> <a id="author_t1_e4u" href="http://lesswrong.com/user/pseudonymous/">pseudonymous</a> </span>
+<span class="comment-date" time="1177587273"> 26 April 2007 09:34:33PM </span>
+<span class="votes " title="100% positive"> 1 point </span>
+<div id="body_t1_e4u" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p><i>It seems to me that social consensus accepts expression of strong feelings by women, just not by men.</i></p>
+   <p>Traditionaly, women were thought inferior to men precisely because they were thought to have stronger feelings.</p>
+   <p>It is not thought wise to have anyone "emotional" in any position of importance.</p>
+   <p>But "emotional" is usually interpreted to mean that your feelings are easily swayed.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4v"/><span>ID: e4v</span>
+<span class="author gray"> <a id="author_t1_e4v" href="http://lesswrong.com/user/Stephan_Johnson/">Stephan_Johnson</a> </span>
+<span class="comment-date" time="1177587760"> 26 April 2007 09:42:40PM </span>
+<span class="votes " title="50% positive"> 0 points </span>
+<div id="body_t1_e4v" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Your thoughts on this would profit a lot from some reading of recent research in neuroscience--specifically people like D'Amasio, LeDoux, and Ramachandran, Sacks (there are lots others, too). The idea that rationality begins with some 'asking how-the-world is' as if that act itself were not completely shot through with emotional responses is hopelessly naive. Without an emotional response, one could never even form the judgment that the world-is-any-particular way. The brain lesion studies on this are pretty clear; it's an emotional response that both triggers and suffuses the judgments we make about the way-the-world-is. For sure strong emotional responses can get in the way of other emotionally charged inferences (those that are typically thought of as canonically rational), but the whole opposition of emotions and rationality, as if they were in any way exclusive, is wrong headed. There are some emotional responses to situations that we call rational, and there are others that get in the way of those. The normative evaluation of the judgments must be left up to some other valuative metric--e.g., conducive to other emotional attitudes, etc. In a word, Hume was right, righter than even he knew.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4w"/><span>ID: e4w</span>
+<span class="author gray"> <a id="author_t1_e4w" href="http://lesswrong.com/user/Gordon_Worley/">Gordon_Worley</a> </span>
+<span class="comment-date" time="1177590465"> 26 April 2007 10:27:45PM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_e4w" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>As I see it, what's most important is to make a division between rationality and emotions in terms of where they fit in the equations. Rationality describes the equations, emotions provide a source of evidence that must be applied correctly. If an outcome makes me happy, that should make me desire that outcome more, but not make me think that outcome more likely than if it made me sad (unless, of course, I'm evaluating the probability that I will be motivated to do something).</p>
+   <p>Unfortunately, I think this model of mind is not how the human mind actually works. Emotions appear to change the equations, not their arguments, so eliminating emotions seems like an appropriate measure to increase the human brain's approximation of a rational process. Maybe you can allow yourself feel happy or sad at an outcome without it affecting the outcome, but getting to that point may require an unemotional transition period as you change your thinking to match that of a rational process.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4x"/><span>ID: e4x</span>
+<span class="author gray"> <a id="author_t1_e4x" href="http://lesswrong.com/user/Eliezer_Yudkowsky/">Eliezer_Yudkowsky</a> </span>
+<span class="comment-date" time="1177597443"> 27 April 2007 12:24:03AM </span>
+<span class="votes " title="100% positive"> 2 points </span>
+<div id="body_t1_e4x" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>Stephan, it is important to establish <i>normative</i> separation between the roles that emotions play in perception (which may be part of the process of establishing truth) and the roles that emotions play in motivation (which should not normatively affect what we believe to be true). Yes, it may be the same emotion doing both things. But that doesn't change the <i>normative</i> difference in the <i>roles.</i></p>
+   <p>When I say "rationality begins with" I am talking about deriving the normative criterion, not about the brain's real-world temporal order of evaluation.</p>
+   <p>(And yes, I'm read up on neuroscience to the level you specified.)</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e4y"/><span>ID: e4y</span>
+<span class="author gray"> <a id="author_t1_e4y" href="http://lesswrong.com/user/Nancy_Lebovitz/">Nancy_Lebovitz</a> </span>
+<span class="comment-date" time="1190487912"> 23 September 2007 05:05:12AM </span>
+<span class="votes " title="100% positive"> 8 points </span>
+<div id="body_t1_e4y" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>It's my impression that men and women are permitted somewhat different sets of emotions--men are freer to show anger, women are freer to show sadness. And that showing emotion is more permitted now than it was a few decades ago.</p>
+   <p>As far as I can tell, it's possible to be emotional (or at least fairly emotional) and logical at the same time, so long as the emotion isn't territorial attachment to an idea.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="e54"/><span>ID: e54</span>
+<span class="author gray"> <a id="author_t1_e54" href="http://lesswrong.com/user/Luke_Parrish/">Luke_Parrish</a> </span>
+<span class="comment-date" time="1243236272"> 25 May 2009 05:24:32PM </span>
+<span class="votes " title="100% positive"> 1 point </span>
+<div id="body_t1_e54" class="comment-content "> 
+ <div class="md">
+  <div>
+   <p>I agree that you don't have to throw out emotion to be rational. You just have to put it in its proper place. Logical analysis has to be given a higher priority in forming a good picture of events. But once you have done it, emotion is what powers your actions and words, and gives them meaning.</p>
+   <p>If I did not have millions of years of evolution making me hate death, it would be less meaningful to talk about how much we need cryonics. I would have to appeal to its usefulness in special cases (preserving great minds or useful workers) rather than advocating the abolition of preventable death. It would not be so emotional, or so urgent.</p>
+   <p>Ironically, the fact that it is so emotional is what leads people in our society to doubt it. They think it promises something they could not hope for it to deliver. Many of them have had to work through the pain of several nearby deaths already, and thus would have to question the assumptions (afterlife, nonpreventability, survival of the species, whatever) that helped them work through it to a state of acceptance.</p>
+  </div>
+ </div> 
+</div>
+<hr>
+<a name="17ve"/><span>ID: 17ve</span>
+<span class="author gray"> <a id="author_t1_17ve" href="http://lesswrong.com/user/Wei_Dai/">Wei_Dai</a> </span>
+<span class="comment-date" time="1256982989"> 31 October 2009 07:56:29PM <em>*</em>&nbsp; </span>
+<span class="votes " title="100% positive"> 3 points </span>
+<div id="body_t1_17ve" class="comment-content "> 
+ <div class="md">
+  <p>I agree that it's not necessarily irrational to feel, but I think the <em>way</em> we feel is clearly irrational. For example, our emotions don't seem to work in a time-consistent manner, and we often later regret actions that we take based on strong emotions, when those emotions eventually fade away. If we could modify the way our emotions work cheaply and safely, I think many of us would probably take advantage of the opportunity. A rational agent wouldn't wish to modify its mind like that.</p> 
+  <p>Here's another, more specific example. I sometimes feel a sense of schadenfreude when someone that I might be in <a href="http://lesswrong.com/lw/4d/youre_calling_who_a_cult_leader/35n">status competition</a> with publicly makes a mistake or suffers a setback of some kind. By itself, this feeling may not be irrational (except perhaps on a <a href="http://lesswrong.com/lw/146/the_second_best/">group level</a>), but I simultaneously feel a disgust for myself for feeling this way, and wish that I could edit away this ugly emotion. (Until then, I have to spend some effort to keep myself from being overly critical of others.) Would anyone claim that these emotions together do not constitute irrationality?</p>
+ </div> 
+</div>
+<hr>
+<a name="1uwk"/><span>ID: 1uwk</span>
+<span class="author gray"> <a id="author_t1_1uwk" href="http://lesswrong.com/user/diegocaleiro/">diegocaleiro</a> </span>
+<span class="comment-date" time="1270606709"> 07 April 2010 12:18:29PM </span>
+<span class="votes " title="50% positive"> 0 points </span>
+<div id="body_t1_1uwk" class="comment-content "> 
+ <div class="md">
+  <p>Rationality destroys emotions.</p> 
+  <p>Not always.</p> 
+  <p>But here is a way in which it happens: My friends sometimes have very strong emotions that generate behavior that is completely imoral, sometimes self-contradictory etc... The natural response in me used to be to get mad at them back, creating a circle of anger for a while, which eventually fades away. When this happens, usually the one with more social credence "wins" and does not have to concede whatever is at stake.</p> 
+  <p>Now, enters rationality. My friend goes super angry about something. I know the emotion works in such and such way, and as such it blinds him from the irrationality of his behavior, and it's imorality. Therefore I do not feel so strongly against him anymore, for I understand what he does not, why he does not etc....</p> 
+  <p>Since I understand him, hating him is no longer natural, for I've detached my conception of the awful moral act from my conception of the "agent" of the act, I understand that it was not him, but what Dennett calls floating reasons, that have done the job.</p> 
+  <p>This is one of the ways reason can and does destroy emotions.</p>
+ </div> 
+</div>
+<hr>
+<a name="297w"/><span>ID: 297w</span>
+<span class="author gray"> <a id="author_t1_297w" href="http://lesswrong.com/user/lockeandkeynes/">lockeandkeynes</a> </span>
+<span class="comment-date" time="1278600432"> 09 July 2010 12:47:12AM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_297w" class="comment-content "> 
+ <div class="md">
+  <p>Someone who takes rationality-as-attire (like Roddenberry's Spock) would avoid strong emotions because they are superficially irrational.</p>
+ </div> 
+</div>
+<hr>
+<a name="39k7"/><span>ID: 39k7</span>
+<span class="author gray"> <a id="author_t1_39k7" href="http://lesswrong.com/user/michaelcurzi/">michaelcurzi</a> </span>
+<span class="comment-date" time="1293941900"> 02 January 2011 02:18:20PM </span>
+<span class="votes " title="100% positive"> 1 point </span>
+<div id="body_t1_39k7" class="comment-content "> 
+ <div class="md">
+  <p>I'm particularly interested in the idea of rational emotion promoted by Objectivism:</p> 
+  <blockquote> 
+   <p><em>"Just as the pleasure-pain mechanism of man’s body is an automatic indicator of his body’s welfare or injury, a barometer of its basic alternative, life or death—so the emotional mechanism of man’s consciousness is geared to perform the same function, as a barometer that registers the same alternative by means of two basic emotions: joy or suffering. Emotions are the automatic results of man’s value judgments integrated by his subconscious; emotions are estimates of that which furthers man’s values or threatens them, that which is for him or against him—lightning calculators giving him the sum of his profit or loss."</em></p> 
+  </blockquote> 
+  <p>From <a href="http://aynrandlexicon.com/lexicon/emotions.html" rel="nofollow">the Ayn Rand Lexicon</a></p>
+ </div> 
+</div>
+<hr>
+<a name="4ait"/><span>ID: 4ait</span>
+<span class="author gray"> <a id="author_t1_4ait" href="http://lesswrong.com/user/vmkumar/">vmkumar</a> </span>
+<span class="comment-date" time="1307008906"> 02 June 2011 08:01:46PM </span>
+<span class="votes " title="100% positive"> 2 points </span>
+<div id="body_t1_4ait" class="comment-content "> 
+ <div class="md">
+  <p>In my entire team of Engineers, the one common look I get is a Poker face. It appears that this kind of expression is "default", and showing emotion is something foreign. I wish people would be OK with just expressing themselves - how they feel about any particular situation.</p> 
+  <p>Then, the truth would quite often be out on the table, and everybody can then deal with it [along with the consequences!]</p>
+ </div> 
+</div>
+<hr>
+<a name="52gd"/><span>ID: 52gd</span>
+<span class="author gray"> <a id="author_t1_52gd" href="http://lesswrong.com/user/Grognor/">Grognor</a> </span>
+<span class="comment-date" time="1319189497"> 21 October 2011 07:31:37PM <em>*</em>&nbsp; </span>
+<span class="votes " title="100% positive"> 4 points </span>
+<div id="body_t1_52gd" class="comment-content "> 
+ <div class="md">
+  <p>Having read <a href="http://www.amazon.com/Feeling-Good-New-Mood-Therapy/dp/0380810336" rel="nofollow">Feeling Good</a>, I have a different view on emotions than those posed thus far in the comments.</p> 
+  <p>Anger might be a valid response to the little goblin tying your shoes together, but the rational person asks, "Does it benefit me or hurt me to feel anger?" Anger is generally a maladaptive response in today's environment of tremendous punishments for physical violence, and that's beside the fact that it is an <em>extremely</em> unpleasant feeling.</p> 
+  <p>Instrumental rationality, remember? If it prevents you from fulfilling your goals to feel <em>x</em>, then <em>x</em> is unwarranted.</p> 
+  <p>In Eliezer's case, "It benefits me to feel sad because my brother died," is uncertain. Maybe it motivates him to work really hard at creating Friendly AI and is thus warranted, but the impression I get is that he was already doing that.</p> 
+  <p>I almost hope he doesn't see this comment, but I'd like to see his response. I have a vague feeling of something crucial I overlooked.</p> 
+  <p>Edit: It seems <a href="http://lesswrong.com/lw/hp/feeling_rational/1uxa">Amanojack</a> expressed this sentiment earlier, and I didn't really need to post this. <a href="http://lesswrong.com/lw/i9/the_importance_of_saying_oops/">Oops</a>.</p>
+ </div> 
+</div>
+<hr>
+<a name="6fom"/><span>ID: 6fom</span>
+<span class="author gray"> <a id="author_t1_6fom" href="http://lesswrong.com/user/Spectral_Dragon/">Spectral_Dragon</a> </span>
+<span class="comment-date" time="1335157278"> 23 April 2012 03:01:18PM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_6fom" class="comment-content "> 
+ <div class="md">
+  <p>Interesting post. I think something like that happened to me - I was only glad when I was right, or at least thought I was right, but... Doesn't rationality in general diminish sadness over non-acute things? Sure, wars are awful no matter how rational or irrational you are, but... For example, dealing with the fact that The Universe Doesn't Care seems very troublesome for a lot of my peers, to the point where they push it away, same with genetically-determined intelligence.</p> 
+  <p>Same with, as I've noticed, a seeming lack of empathy towards people. Not sure how to deal with that, as I want to be right, and correct others, even when they don't like it. Ah, the dilemmas... And I can't think of a third alternative either.</p>
+ </div> 
+</div>
+<hr>
+<a name="6hhr"/><span>ID: 6hhr</span>
+<span class="author gray"> <a id="author_t1_6hhr" href="http://lesswrong.com/user/donjoe/">donjoe</a> </span>
+<span class="comment-date" time="1335829442"> 01 May 2012 09:44:02AM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_6hhr" class="comment-content "> 
+ <div class="md">
+  <p>"our emotions arise from our models of reality. If I believe that my dead brother has been discovered alive, I will be happy"</p> 
+  <p>Fallacy of the single cause. Knowledge of the physical fact of his being alive does not completely determine your response of being happy, many other things come into this, of which at least a few are non-rational. Maybe your brother is a convicted serial killer who recently escaped from detention, killed a few more people according to his old habits and is now reported to be alive only by virtue of having escaped a police hunt through the nearby forest (with officers ordered to shoot on sight). Yet still you may be happy to hear he's alive (and here comes the usual explanation people give, the real explanation) "because he's your brother". This is considered to be the most important factor in your being happy in this case - "because he's your brother" - and it encodes some non-rational baggage together with some arguably rational things (like an evolutionary preference to support the survival of your kin's genes etc.).</p> 
+  <p>The fact is that any human preference results from multiple causes and at least one of those will always be non-rational (which is to say I don't know of even one single example where this was not the case) and will open said preference to being labelled "non-rational".</p> 
+  <p>Reason is just a tool. Before you decide what to use the tool for, you have to have non-rational preferences about which things to even try to do. For example, first you have the non-rational desire to predict the future behaviour of physical systems with high accuracy and only afterwards do you employ rational methods to achieve that (which leads to science). The only rational part is what you're doing after you've established your fundamental goal. The fundamental goal itself can't be rational insofar as it can't be derived logically from any antecedents. Even if your desire to predict things was based on your desire to survive and even if the desire of the individual to survive could be justified on the basis of the evolutionary goal for the species to survive, you still end up at a point where you can no longer offer any justifications. Why should your species survive and not others? Maybe you think your species has the highest capacity of ensuring the survival of life-in-general in the universe for the longest time? But even then, why should life-in-general survive? Just because. Non-rationally. :)</p>
+ </div> 
+</div>
+<hr>
+<a name="6n9w"/><span>ID: 6n9w</span>
+<span class="author gray"> <a id="author_t1_6n9w" href="http://lesswrong.com/user/avichapman/">avichapman</a> </span>
+<span class="comment-date" time="1337624160"> 22 May 2012 04:16:00AM </span>
+<span class="votes " title="100% positive"> 6 points </span>
+<div id="body_t1_6n9w" class="comment-content "> 
+ <div class="md">
+  <p>I was talking to someone the other day about our treatment of sexual offenders. She seemed to be insinuating that I didn't care about the plight of the victims because by proposed solutions were all aimed at reducing sexual violence rather than punishing the offenders.</p> 
+  <p>I told her that the injustices visited upon the victims of sexual abuse made me very angry, which made me passionate about fixing the problem. Having set my goal of reducing sexual violence, it behooved me not to let my anger at the perpetrator distract me from the task of achieving that goal. If I'm ever presented with a choice where I can either punish the perpetrator or help the victim (or future potential victims), I chose the latter. You can't always do both at the same time.</p> 
+  <p>So I suppose emotions can be rational in that they can arise from truth, but they can also be very irrational in that they prevent winning your goals.</p>
+ </div> 
+</div>
+<hr>
+<a name="755y"/><span>ID: 755y</span>
+<span class="author gray"> <a id="author_t1_755y" href="http://lesswrong.com/user/Darren_Nolen/">Darren_Nolen</a> </span>
+<span class="comment-date" time="1343989617"> 03 August 2012 08:26:57PM <em>*</em>&nbsp; </span>
+<span class="votes " title="100% positive"> 1 point </span>
+<div id="body_t1_755y" class="comment-content "> 
+ <div class="md">
+  <p>An interesting perspective on the validity of emotional states vis-à-vis Rationality.</p> 
+  <p>I have something of a fear of heights. This fear is, I realize, irrational. Certainly, Being afraid of falling and the resultant injury or death is reasonable and potentially useful. However, fear when it is completely unfounded…</p> 
+  <p>I remember a spring break some years back, where I learned to ski and enjoyed it very much indeed. I was, however, held back by my visceral reaction, whenever approaching a portion of the trail where I could not see my path of travel, part of my brain was absolutely convinced that I would find myself plunging into the yawning crevice which awaited me. This was irrational as I well knew that were the designers of ski resorts prone to leaving yawning crevasses laying about they would find a definite limitation in their repeat business.</p> 
+  <p>“Nothing doing,” said my brain, “there is the veritable Grand Canyon just beyond that hillock, and I am locking the legs in ‘Snow Plow’ position until I see different!”</p>
+ </div> 
+</div>
+<hr>
+<a name="7prs"/><span>ID: 7prs</span>
+<span class="author gray"> <a id="author_t1_7prs" href="http://lesswrong.com/user/gokhalea/">gokhalea</a> </span>
+<span class="comment-date" time="1351531275"> 30 October 2012 03:21:15AM </span>
+<span class="votes " title="0% positive"> 0 points </span>
+<div id="body_t1_7prs" class="comment-content "> 
+ <div class="md">
+  <p>what about applying rationality to the emotional situations themselves? when your family member dies by virtue of someone elses mistake/accident, does rationality require (in its purest sense) that we evaluate the situation without the emotions that a family member often feels? if not, what if a third party "rationally" evaluates the situation differently? (e.g. "your family member was equally at fault") . Can two different viewpoints about the same event be rational, taking into account each decision maker's relative emotions (or lack thereof)?</p>
+ </div> 
+</div>
+<hr>
+<a name="9ngs"/><span>ID: 9ngs</span>
+<span class="author gray"> <a id="author_t1_9ngs" href="http://lesswrong.com/user/Multiheaded/">Multiheaded</a> </span>
+<span class="comment-date" time="1377669494"> 28 August 2013 03:58:14PM <em>*</em>&nbsp; </span>
+<span class="votes " title="78% positive"> 5 points </span>
+<div id="body_t1_9ngs" class="comment-content "> 
+ <div class="md">
+  <p>A somewhat related, incredibly badass quote.</p> 
+  <blockquote> 
+   <p>"...I hear some one of my audience say,... ...you and your brother abolitionists fail to make a favorable impression on the public mind. Would you argue more, and denounce less, would you persuade more, and rebuke less, your cause would be much more likely to succeed. But, I submit, where all is plain there is nothing to be argued. What point in the anti-slavery creed would you have me argue? On what branch of the subject do the people of this country need light? Must I undertake to prove that the slave is a man? That point is conceded already. Nobody doubts it..."</p> 
+   <p>"...Would you have me argue that man is entitled to liberty? that he is the rightful owner of his own body? You have already declared it. Must I argue the wrongfulness of slavery? Is that a question for Republicans? Is it to be settled by the rules of logic and argumentation, as a matter beset with great difficulty, involving a doubtful application of the principle of justice, hard to be understood? <strong>How should I look to-day, in the presence of Americans, dividing, and subdividing a discourse, to show that men have a natural right to freedom? speaking of it relatively, and positively, negatively, and affirmatively. To do so, would be to make myself ridiculous, and to offer an insult to your understanding.</strong> There is not a man beneath the canopy of heaven, that does not know that slavery is wrong for him..."</p> 
+   <p>"...At a time like this, scorching irony, not convincing argument, is needed. O! had I the ability, and could I reach the nation’s ear, I would, to-day, pour out a fiery stream of biting ridicule, blasting reproach, withering sarcasm, and stern rebuke. For it is not light that is needed, but fire; it is not the gentle shower, but thunder. We need the storm, the whirlwind, and the earthquake. <strong>The feeling of the nation must be quickened; the conscience of the nation must be roused; the propriety of the nation must be startled;</strong> the hypocrisy of the nation must be exposed; and its crimes against God and man must be proclaimed and denounced. "</p> 
+  </blockquote> 
+  <p>-Frederick Douglass, black Abolitionist leader, in <a href="http://www.pbs.org/wgbh/aia/part4/4h2927t.html" rel="nofollow"><em>What to the Slave is the Fourth of July?</em></a></p> 
+  <p>(Related, <a href="http://www.utrechtlawreview.org/index.php/ulr/article/viewFile/164/163" rel="nofollow">Richard Rorty</a> on a pragmatist/postmodernist approach to human rights, solidarity and empathy.)</p> 
+  <p>(P.S. Considered posting this in Rationality Quotes first... but I hoped that the context of EY's essay might help the quote look less provocative/trollish for LW.)</p>
+ </div> 
+</div>
+<hr>
+<a name="9unf"/><span>ID: 9unf</span>
+<span class="author gray"> <a id="author_t1_9unf" href="http://lesswrong.com/user/Shield/">Shield</a> </span>
+<span class="comment-date" time="1380947138"> 05 October 2013 02:25:38PM </span>
+<span class="votes " title="67% positive"> 1 point </span>
+<div id="body_t1_9unf" class="comment-content "> 
+ <div class="md">
+  <p>What is it with you and shoelaces?</p>
+ </div> 
+</div>
+<hr>
+<a name="a2r3"/><span>ID: a2r3</span>
+<span class="author gray"> <a id="author_t1_a2r3" href="http://lesswrong.com/user/laofmoonster/">laofmoonster</a> </span>
+<span class="comment-date" time="1384959273"> 21 November 2013 12:54:33AM </span>
+<span class="votes " title="50% positive"> 0 points </span>
+<div id="body_t1_a2r3" class="comment-content "> 
+ <div class="md">
+  <p>Emotions, like any sensory input, can serve as a source of information to be rationally inspected and used to form beliefs about the external world. It is only when emotions <em>interfere</em> with the process of interpreting information that they become detrimental to rationality.</p>
+ </div> 
+</div>
+<hr><a href="#FeelingRational">Go To Start of Post</a><br>

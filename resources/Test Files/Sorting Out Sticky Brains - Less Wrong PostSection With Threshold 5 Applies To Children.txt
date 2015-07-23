@@ -1,0 +1,98 @@
+<span class="author"> <span class="hide-text">Post author:</span> <a id="author_t3_1mu" href="http://lesswrong.com/user/Alicorn/">Alicorn</a> </span><span class="date">18 January 2010 04:18AM</span><div class="md"> 
+ <div itemprop="description"> 
+  <div>
+   <p>tl;dr: Just because it doesn't seem like we <em>should</em> be able to have beliefs we acknowledge to be irrational, doesn't mean we <em>don't</em> have them.&nbsp; If this happens to you, here's a tool to help conceptualize and work around that phenomenon.</p> 
+   <p>There's a general feeling that by the time you've acknowledged that some belief you hold is not based on rational evidence, it has already evaporated.&nbsp; The very act of realizing it's not something you should believe makes it go away.&nbsp; If that's your experience, I applaud your well-organized mind!&nbsp; It's serving you well.&nbsp; This is exactly as it should be.</p> 
+   <p>If only we were all so lucky.</p> 
+   <p>Brains are sticky things.&nbsp; They will hang onto comfortable beliefs that don't make sense anymore, view the world through familiar filters that should have been discarded long ago, see significances and patterns and illusions even if they're known by the <em>rest</em> of the brain to be irrelevant.&nbsp; Beliefs <em>should</em> be formed on the basis of sound evidence.&nbsp; But that's not the only mechanism we have in our skulls to form them.&nbsp; We're equipped to come by them in other ways, too.&nbsp; It's been observed<sup>1</sup> that believing contradictions is only bad because it entails believing falsehoods.&nbsp; If you can't get rid of one belief in a contradiction, and that's the false one, then believing a contradiction is the best you can do, because then at least you have the true belief too.</p> 
+   <p>The mechanism I use to deal with this is to label my beliefs "official" and "unofficial".&nbsp; My official beliefs have a second-order stamp of approval.&nbsp; I believe them, and I believe that I <em>should</em> believe them.&nbsp; Meanwhile, the "unofficial" beliefs are those I can't get rid of, or am not motivated to try really hard to get rid of because they aren't problematic enough to be worth the trouble.&nbsp; They might or might not outright contradict an official belief, but regardless, I try not to act on them.<a id="more"></a></p> 
+   <p>To those of you with well-ordered minds (for such lucky people seem to exist, if we believe some of the self-reports on this very site), this probably sounds outrageous.&nbsp; If I <em>know they're probably not true...</em> And I do.&nbsp; But they still make me expect things.&nbsp; They make me surprised when those expectations are flouted.&nbsp; If I'm asked about their subjects when tired, or not prepared for the question, they'll leap out of my mouth before I can stop them, and they won't feel like lies - because they're not.&nbsp; They're beliefs.&nbsp; I just don't like them very much.</p> 
+   <p>I'll supply an example.&nbsp; I have a rather dreadful phobia of guns, and accordingly, I think they should be illegal.&nbsp; The phobia is a terrible reason to believe in the appropriateness of such a ban: said phobia doesn't even stand in for an informative real experience, since I haven't lost a family member to a stray bullet or anything of the kind.&nbsp; I certainly don't assent to the general proposition "anything that scares me should be illegal".&nbsp; I have no other reasons, except for a vague affection for a cluster of political opinions which includes something along those lines, to believe this belief.&nbsp; Neither the fear nor the affection are reasons I endorse for believing things in general, or this in particular.&nbsp; So this is an unofficial belief.&nbsp; Whenever I can, I avoid acting on it.&nbsp; Until I locate some good reasons to believe something about the topic, I officially have no opinion.&nbsp; I avoid putting myself in situations where I might act on the unofficial belief in the same way I might avoid a store with contents for which I have an unendorsed desire, like a candy shop.&nbsp; For instance, when I read about political candidates' stances on issues, I avoid whatever section talks about gun control.</p> 
+   <p>Because I know my brain collects junk like this, I try to avoid making up my mind until I do have a pretty good idea of what's going on.&nbsp; Once I tell myself, "Okay, I've decided", I run the risk of lodging something permanently in my cortex that won't release its stranglehold on my thought process until kingdom come.&nbsp; I use tools like "temporarily operating under the assumption that" (some proposition) or declaring myself "unqualified to have an opinion about" (some subject).&nbsp; The longer I hold my opinions in a state of uncertainty, the less chance I wind up with a permanent epistemic parasite that I have to devote cognitive resources to just to keep it from making me do dumb things.&nbsp; This is partly because it makes the state of uncertainty come to feel like a default, which makes it simpler to slide back to uncertainty again if it seems warranted.&nbsp; Partly, it's because the longer I wait, the more evidence I've collected by the time I pick a side, so it's less likely that the belief I acquire is one I'll want to excise in the future.</p> 
+   <p>This is all well and good as a prophylactic.&nbsp; It doesn't help as much with stuff that snuck in when I was but a mere slip of a youth.&nbsp; For that, I rely on the official/unofficial distinction, and then <em>toe the official line as best I can</em> in thought, word, and deed.&nbsp; I break in uncomfy official beliefs like new shoes.&nbsp; You can use your brain's love of routine to your advantage.&nbsp; Act like you only believe the official beliefs, and the unofficial ones will weaken from disuse.&nbsp; This isn't a betrayal of your "real" beliefs.&nbsp; The official beliefs are real too!&nbsp; They're real, and they're <em>better</em>.</p> 
+   <p>&nbsp;</p> 
+   <p><sup>1</sup>I read this in Peter van Inwagen's book "Essay on Free Will" but seem to remember that he got it elsewhere.&nbsp; I'm not certain where my copy has gotten to lately, so can't check.</p>
+  </div> 
+ </div> 
+</div>
+<hr>
+<hr>
+<a id="_comments">
+<a href=".html#">Skip Comments</a><br>
+<a name="2byv"/><span>ID: 2byv</span>
+<span class="author gray"> <a id="author_t1_2byv" href="http://lesswrong.com/user/LauralH/">LauralH</a> </span>
+<span class="comment-date" time="1280228742"> 27 July 2010 09:05:42PM </span>
+<span class="votes " title="100% positive"> 6 points </span>
+<div id="body_t1_2byv" class="comment-content "> 
+ <div class="md">
+  <p>Anecdotal: I used to be afraid of guns (and also subscribe to the political spectrum that was afraid of guns), but frequent exposure to guns has changed this. I don't think having a healthy respect for something so dangerous is bad at all, but my brain used to just shut down at the word "gun" and I couldn't be at all neutral about it. Now I think they're kind of cool. If you are working at all on desensitizing your phobia, that might be an interesting post (although I realize this series is officially complete).</p>
+ </div> 
+</div>
+<hr>
+<a name="1gum"/><span>ID: 1gum</span>
+<span class="author gray"> <a id="author_t1_1gum" href="http://lesswrong.com/user/Emile/">Emile</a> </span>
+<span class="comment-date" time="1263816808"> 18 January 2010 10:13:28PM </span>
+<span class="votes " title="100% positive"> 6 points </span>
+<div id="body_t1_1gum" class="comment-content "> 
+ <div class="md">
+  <p>Good article! I like the "official/unofficial" terminology.</p> 
+  <p>I suspect a lot of those "unofficial beliefs" are about ourselves, how people judge us, what we can do, what is ok, what is offensive/insulting, etc. - at least, most instances I can think of were of that kind. "I [i]know[/i] so-and-so didn't deliberately act that way to annoy me, but I'm still as angry as if he did.", "I [i]know[/i] that girl isn't going to laugh at me, but I'm as nervous as if she was", etc.</p> 
+  <p>This ties in with Akrasia ("I know writing my thesis is more important than watching falling goats on YouTube, but my behaviour shows otherwise"), and self-delusion (If It' trying to make myself believe I have high-status, isn't it like trying to make it an official belief even though part of us knows it's not true?).</p>
+ </div> 
+</div>
+<hr>
+<hr>
+<p>Parent comment not included</p>
+<hr>
+<a name="1gwc"/><span>ID: 1gwc</span>
+<span class="author gray"> <a id="author_t1_1gwc" href="http://lesswrong.com/user/MichaelGR/">MichaelGR</a> </span>
+<span class="comment-date" time="1263829766"> 19 January 2010 01:49:26AM <em>*</em>&nbsp; </span>
+<span class="votes " title="94% positive"> 15 points </span>
+<div id="body_t1_1gwc" class="comment-content "> 
+ <div class="md">
+  <p>In general, if I saw that title on Reddit or Hacker News or in my feed reader, I would never click on it. It's kind of generic and doesn't really tell you much about the content, and that phrase is highly associated with political TV ads (which are uniformly bad), a Very Bad Thing IMHO. I was actually going to skip it, but saw your username and the number of votes it had.</p> 
+  <p>As a LW post specifically, I feel like almost all the "classic" OB/LW posts had memorable titles that make it easy to remember what the post is about and serve as a kind of hook/shortcut for that particular concept (f.ex. <em>Probability is in the Mind</em>, <em>The map is not the Territory</em>, <em>Avoiding Your Belief’s Real Weak Points</em>, <em>Cached Thoughts</em>, <em>The Beauty of Settled Science</em>, <em>An Alien God</em>, <em>Applause Lights</em> -- I'm sure that when you read these titles, if you've read the posts, you immediately remember the central concept of each of these posts).</p> 
+  <p>If I think about the title of your post, I have to make an effort to remember what it's about, and I predict that I'll have a harder time remembering it over time <em>because</em> of the title.</p> 
+  <p>But maybe that's just me and it doesn't bother others, though.</p>
+ </div> 
+</div>
+<hr>
+<hr>
+<p>Parent comment not included</p>
+<hr>
+<a name="1gqg"/><span>ID: 1gqg</span>
+<span class="author gray"> <a id="author_t1_1gqg" href="http://lesswrong.com/user/CannibalSmith/">CannibalSmith</a> </span>
+<span class="comment-date" time="1263770010"> 18 January 2010 09:13:30AM <em>*</em>&nbsp; </span>
+<span class="votes " title="93% positive"> 24 points </span>
+<div id="body_t1_1gqg" class="comment-content "> 
+ <div class="md">
+  <p>Parent voted back up to zero, because people shouldn't actually lose karma for comments like that, because some worded praise is human and good, and because it won't contribute to noise significantly, because insightful and informative type comments will get voted higher and will thus appear before it.</p>
+ </div> 
+</div>
+<hr>
+<hr>
+<span>Parent Comment: </span><a href="#1gqg">1gqg</a><span> by </span><span class="author gray"> <a id="author_t1_1gqg" href="http://lesswrong.com/user/CannibalSmith/">CannibalSmith</a> </span>
+<hr>
+<a name="1grm"/><span>ID: 1grm</span>
+<span class="author gray"> <a id="author_t1_1grm" href="http://lesswrong.com/user/Eliezer_Yudkowsky/">Eliezer_Yudkowsky</a> </span>
+<span class="comment-date" time="1263795478"> 18 January 2010 04:17:58PM </span>
+<span class="votes " title="92% positive"> 11 points </span>
+<div id="body_t1_1grm" class="comment-content "> 
+ <div class="md">
+  <p>Compliments like that are author-fuel.</p>
+ </div> 
+</div>
+<hr>
+<hr>
+<p>Parent comment not included</p>
+<hr>
+<a name="1gu6"/><span>ID: 1gu6</span>
+<span class="author gray"> <a id="author_t1_1gu6" href="http://lesswrong.com/user/Alicorn/">Alicorn</a> </span>
+<span class="comment-date" time="1263814015"> 18 January 2010 09:26:55PM <em>*</em>&nbsp; </span>
+<span class="votes " title="100% positive"> 7 points </span>
+<div id="body_t1_1gu6" class="comment-content "> 
+ <div class="md">
+  <p>I think, if it was a religious belief, considering something <em>inappropriate to believe</em> would be just about as frowned upon as actually not believing it. Religious beliefs tend to come with little tags on them that say "and it is good and right to believe this", or they wouldn't be so virulent and so hard to attack. It does seem like some people don't have the experience I describe, and as I point out, that's a <em>good</em> thing: that doesn't mean it doesn't happen to others. It's probably like mental imagery, which some people have and some don't.</p>
+ </div> 
+</div>
+<hr>
