@@ -55,7 +55,9 @@ public final class LessWrongPostSectionExtractor extends PostSectionExtractor{
                 }
             }
             if (numComments > 0) {
-                lessWrongPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
+                if (!nextPostLinkTitle.isEmpty()) {
+                    lessWrongPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
+                }
                 lessWrongPostContentSB.append(getStringOfIncludedComments(postExtractionDetails, comments));
             }
         }
@@ -72,19 +74,19 @@ public final class LessWrongPostSectionExtractor extends PostSectionExtractor{
                 (comments.get(i).getParentCommentId().isEmpty() || postExtractionDetails.isThresholdAppliesToChildPosts()))) {
 
                 if (postExtractionDetails.isParentPostsIncluded() && !comments.get(i).getParentCommentId().isEmpty()) {
-                    LessWrongCommentSection currCommentSection = comments.get(i);
+                    LessWrongCommentSection currLessWrongCommentSection = comments.get(i);
                     String prevParentCommentId = ""; 
-                    while(!currCommentSection.getParentCommentId().isEmpty()) {
-                        prevParentCommentId = currCommentSection.getParentCommentId();
+                    while(!currLessWrongCommentSection.getParentCommentId().isEmpty()) {
+                        prevParentCommentId = currLessWrongCommentSection.getParentCommentId();
                         for(LessWrongCommentSection commentSection : comments) {
-                            if (commentSection.getId().equals(currCommentSection.getParentCommentId())) {
-                                currCommentSection = commentSection;
+                            if (commentSection.getId().equals(currLessWrongCommentSection.getParentCommentId())) {
+                                currLessWrongCommentSection = commentSection;
                                 includedCommentIds.add(commentSection.getId());
                                 commentIdAuthorSet.put(commentSection.getId(), commentSection.getAuthorHtml());
                                 break;
                             }
                         }
-                        if (prevParentCommentId.equals(currCommentSection.getParentCommentId())) {
+                        if (prevParentCommentId.equals(currLessWrongCommentSection.getParentCommentId())) {
                             break;
                         }
                     }

@@ -1,5 +1,5 @@
 package github.lessWrongApps.lessWrongBookCreator.bookGeneration;
-import github.lessWrongApps.lessWrongBookCreator.scraper.ExcelExtractionException;
+
 import github.lessWrongApps.lessWrongBookCreator.scraper.PostChapter;
 import java.io.File;
 import java.io.FileFilter;
@@ -17,9 +17,6 @@ import org.slf4j.LoggerFactory;
 import nl.siegmann.epublib.domain.Book;
 import nl.siegmann.epublib.domain.Date;
 import nl.siegmann.epublib.domain.Resource;
-import nl.siegmann.epublib.domain.Spine;
-import nl.siegmann.epublib.domain.TOCReference;
-import nl.siegmann.epublib.domain.TableOfContents;
 import nl.siegmann.epublib.epub.EpubWriter;
 /**
  * Class creates ebooks using the html and image files found in the htmlOutput folder
@@ -48,14 +45,14 @@ public class EBookCreator {
     }
     /**
      * Creates an ebook with the given bookName and using postSections to get the names of the post html files
-     * @param postChapters to use when creating the book
-     * @param bookName to save the ebook as 
+     * @param postChapters to use when creating the book 
+     * @param outputFile epub output file
      * @param coverPageFilePath to use if a coverpage is required
      */
-    public void createBook(ArrayList<PostChapter> postChapters, String bookName, String coverPageFilePath) {
+    public void createBook(ArrayList<PostChapter> postChapters, File outputFile, String coverPageFilePath) {
         try{
             Book book = new Book();
-            String bookTitle = new File(bookName).getName();
+            String bookTitle = outputFile.getName();
             int pos = bookTitle.lastIndexOf(".");
             if (pos > 0) {
                 bookTitle = bookTitle.substring(0, pos);
@@ -63,7 +60,8 @@ public class EBookCreator {
             book.getMetadata().addTitle(bookTitle);
             book.getMetadata().addAuthor(new Author("Less Wrong"));
             book.getMetadata().addDate(new Date(new java.util.Date()));
-            book.getResources().add(new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//resources//seperator.gif"), "seperator.gif"));
+            
+            book.getResources().add(new Resource(EBookCreator.class.getResourceAsStream("/seperator.gif"), "seperator.gif"));
             
             if (!coverPageFilePath.isEmpty()) {
                 File coverPageFile = new File(coverPageFilePath);
@@ -76,50 +74,29 @@ public class EBookCreator {
                 book.setCoverPage(new Resource(new FileInputStream(coverPageFile.getAbsolutePath()), coverPageFile.getName()));
             }
             
-            TOCReference summary = book.addSection("Summary", new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//summary.html"), "summary.html"));
+            book.addSection("Summary", new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//summary.html"), "summary.html"));
             for (File selectedFile : getImageFiles("htmlOutput")) {  
                     book.getResources().add(new Resource(new FileInputStream(selectedFile.getAbsolutePath()), selectedFile.getName()));
             } 
-            TOCReference currChapter = null;
-            ArrayList<TOCReference> references = new ArrayList<TOCReference>();
-            references.add(summary);
+
             String currBook = "";
             String currSequence = "";
-            
             for (PostChapter postChapter : postChapters) {
                 if (!currBook.equals(postChapter.getBookName())) {
-                    if (currChapter != null) {
-                        references.add(currChapter);
-                        currChapter = null;
-                    }
                     String BookFileTitle = postChapter.getBookName().replaceAll("\\W+", "");
-                    currChapter = book.addSection(postChapter.getBookName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + BookFileTitle + ".html"), BookFileTitle +".html"));
+                    book.addSection(postChapter.getBookName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + BookFileTitle + ".html"), BookFileTitle +".html"));
                     currBook = postChapter.getBookName();
                 }
                 if (!currSequence.equals(postChapter.getSequenceName())) {
                     String sequenceFileTitle = postChapter.getSequenceName().replaceAll("\\W+", "");
+                    book.addSection(postChapter.getSequenceName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + sequenceFileTitle + ".html"), sequenceFileTitle +".html"));
                     currSequence = postChapter.getSequenceName();
-                    if (currChapter == null) {
-                        currChapter = book.addSection(postChapter.getSequenceName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + sequenceFileTitle + ".html"), sequenceFileTitle +".html"));
-                    } else {
-                        book.addSection(currChapter,postChapter.getSequenceName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + sequenceFileTitle + ".html"), sequenceFileTitle +".html"));
-                    }
                 }
                 String postFileTitle = postChapter.getPostName().replaceAll("\\W+", "");
-                if (currChapter == null) {
-                    currChapter = book.addSection(postChapter.getPostName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + postFileTitle + ".html"), postFileTitle +".html"));
-                } else {
-                    book.addSection(currChapter,postChapter.getPostName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + postFileTitle + ".html"), postFileTitle +".html"));
-                }
+                book.addSection(postChapter.getPostName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + postFileTitle + ".html"), postFileTitle +".html"));
             }
-            if (currChapter != null) {
-                references.add(currChapter);
-            }
-            book.getTableOfContents().setTocReferences(references);
-            Spine spine = new Spine(book.getTableOfContents());
-            book.setSpine(spine);
             EpubWriter epubWriter = new EpubWriter();
-            epubWriter.write(book, new FileOutputStream(bookName));
+            epubWriter.write(book, new FileOutputStream(outputFile));
         } catch (FileNotFoundException e) {
             logger.error("", e);
         } catch (IOException e) {

@@ -1,6 +1,5 @@
 package github.lessWrongApps.lessWrongBookCreator.bookGeneration;
 
-import github.lessWrongApps.lessWrongBookCreator.bookGeneration.PostHtmlCreator;
 import github.lessWrongApps.lessWrongBookCreator.scraper.PostSection;
 import java.io.File;
 import java.util.ArrayList;

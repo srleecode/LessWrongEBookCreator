@@ -1,6 +1,5 @@
 package github.lessWrongApps.lessWrongBookCreator.scraper;
 
-import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.jsoup.nodes.Document;
@@ -21,11 +20,16 @@ public class OvercomingBiasPostSectionExtractor extends PostSectionExtractor{
             overcomingBiasPostContentSB.append("<hr>").append(newLine);
             String linkTitle = postExtractionDetails.getTitle().replaceAll("\\W+", "");
             String nextPostLinkTitle = postExtractionDetails.getNextPost().replaceAll("\\W+", "");
-            overcomingBiasPostContentSB.append("<a id=\"").append(linkTitle).append("_comments\">").append(newLine);
+            
             Elements commentElements = doc.select("li.comment");
-            if (postExtractionDetails.isCommentsIncluded() && commentElements.size() > 0) {
-                overcomingBiasPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
-                overcomingBiasPostContentSB.append(getCommentsString(commentElements));
+            if (postExtractionDetails.isCommentsIncluded())  {
+                overcomingBiasPostContentSB.append("<a id=\"").append(linkTitle).append("_comments\">").append(newLine);
+                if (commentElements.size() > 0) {
+                    if (!nextPostLinkTitle.isEmpty()) {
+                        overcomingBiasPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
+                    }
+                    overcomingBiasPostContentSB.append(getCommentsString(commentElements));
+                }
             }
         }
         return overcomingBiasPostContentSB.toString().trim();

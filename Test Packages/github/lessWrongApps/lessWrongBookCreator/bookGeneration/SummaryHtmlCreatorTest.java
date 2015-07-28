@@ -1,6 +1,5 @@
 package github.lessWrongApps.lessWrongBookCreator.bookGeneration;
 
-import github.lessWrongApps.lessWrongBookCreator.bookGeneration.SummaryHtmlCreator;
 import github.lessWrongApps.lessWrongBookCreator.scraper.BookSummarySection;
 import github.lessWrongApps.lessWrongBookCreator.scraper.PostSummarySection;
 import github.lessWrongApps.lessWrongBookCreator.scraper.SequenceSummarySection;

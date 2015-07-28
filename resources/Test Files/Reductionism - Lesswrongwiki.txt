@@ -1,0 +1,36 @@
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"> 
+ <p><b>Reductionism</b> is a disbelief that the higher levels of simplified multilevel models are out there in the <a href="/wiki/Territory" title="Territory" class="mw-redirect">territory</a>, that concepts constructed by mind in themselves play a role in the behavior of reality. This doesn't contradict the notion that the concepts used in simplified multilevel models refer to the actual clusters of configurations of reality. </p> 
+ <h2><span class="mw-headline" id="Blog_posts">Blog posts</span></h2> 
+ <ul> 
+  <li><a rel="nofollow" class="external text" href="http://lesswrong.com/lw/on/reductionism/">Reductionism</a> by <a href="/wiki/Eliezer_Yudkowsky" title="Eliezer Yudkowsky">Eliezer Yudkowsky</a> </li> 
+  <li><a rel="nofollow" class="external text" href="http://lesswrong.com/lw/oo/explaining_vs_explaining_away/">Explaining vs. Explaining Away</a> </li> 
+  <li><a rel="nofollow" class="external text" href="http://lesswrong.com/lw/p3/angry_atoms/">Angry Atoms</a> </li> 
+  <li><a rel="nofollow" class="external text" href="http://lesswrong.com/tag/reductionism/">All Less Wrong posts tagged "reductionism"</a> </li> 
+ </ul> 
+ <h2><span class="mw-headline" id="See_also">See also</span></h2> 
+ <ul> 
+  <li><a href="/wiki/Reductionism_(sequence)" title="Reductionism (sequence)">Reductionism (sequence)</a> </li> 
+  <li><a href="/wiki/Universal_law" title="Universal law">Universal law</a>, <a href="/wiki/Magic" title="Magic">Magic</a> </li> 
+  <li><a href="/wiki/Mind_projection_fallacy" title="Mind projection fallacy">Mind projection fallacy</a> </li> 
+  <li><a href="/wiki/How_an_algorithm_feels" title="How an algorithm feels">How an algorithm feels</a> </li> 
+  <li><a href="/wiki/Free_will" title="Free will">Free will</a> </li> 
+  <li><a href="/wiki/P-zombie" title="P-zombie" class="mw-redirect">P-zombie</a> </li> 
+ </ul> 
+ <dl> 
+  <dd> 
+  </dd> 
+ </dl> 
+ <!-- 
+NewPP limit report
+CPU time usage: 0.144 seconds
+Real time usage: 0.161 seconds
+Preprocessor visited node count: 52/1000000
+Preprocessor generated node count: 649/1000000
+Postâ€�expand include size: 993/2097152 bytes
+Template argument size: 24/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+--> 
+ <!-- Saved in parser cache with key lwiki:pcache:idhash:767-0!*!0!!*!2!* and timestamp 20150724011535 and revision id 6461
+ --> 
+</div>

@@ -12,6 +12,8 @@ public final class WikiPostSectionExtractor extends PostSectionExtractor{
     public String getPostSectionString(PostExtractionDetails postExtractionDetails, Document doc)  {
         StringBuilder wikiPostContentSB = new StringBuilder();
         Elements contentElements = doc.select("div.mw-content-ltr");
+        contentElements.select("div.noprint").remove();
+        contentElements.select("div#stub").remove();
         for (Element contentElement : contentElements) {
             convertImagesToLocal(contentElement);
         }

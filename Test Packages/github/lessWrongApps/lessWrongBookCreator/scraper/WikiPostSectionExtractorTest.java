@@ -1,7 +1,5 @@
 package github.lessWrongApps.lessWrongBookCreator.scraper;
 
-import github.lessWrongApps.lessWrongBookCreator.scraper.WikiPostSectionExtractor;
-import github.lessWrongApps.lessWrongBookCreator.scraper.PostExtractionDetails;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;

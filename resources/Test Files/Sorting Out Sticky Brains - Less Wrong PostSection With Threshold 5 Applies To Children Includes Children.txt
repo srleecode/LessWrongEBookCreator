@@ -18,7 +18,6 @@
 <hr>
 <hr>
 <a id="_comments">
-<a href=".html#">Skip Comments</a><br>
 <a name="2byv"/><span>ID: 2byv</span>
 <span class="author gray"> <a id="author_t1_2byv" href="http://lesswrong.com/user/LauralH/">LauralH</a> </span>
 <span class="comment-date" time="1280228742"> 27 July 2010 09:05:42PM </span>

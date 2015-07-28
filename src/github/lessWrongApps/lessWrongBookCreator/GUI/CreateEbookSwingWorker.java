@@ -38,7 +38,7 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
     private final JTextArea logTextArea;
     private final JButton createEbookButton;
     private final File inputFile;
-    private final String outputFileString;
+    private final File outputFile;
     private final String coverPageFileString;
     private final int commentsThreshold;
     private final boolean isCommentsIncluded;
@@ -47,12 +47,12 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
     private final boolean isThresholdAppliesToChildPosts;
     private double progress;
     
-    public CreateEbookSwingWorker(JTextArea logTextArea, JButton createEbookButton, File inputFile, String outputFileString, String coverPageFileString, int commentsThreshold, 
+    public CreateEbookSwingWorker(JTextArea logTextArea, JButton createEbookButton, File inputFile, File outputFile, String coverPageFileString, int commentsThreshold, 
             boolean isCommentsIncluded, boolean isChildPostsIncluded, boolean isParentPostsIncluded, boolean isThresholdAppliesToChildPosts) {
         this.logTextArea = logTextArea;
         this.createEbookButton = createEbookButton;
         this.inputFile = inputFile;
-        this.outputFileString = outputFileString;
+        this.outputFile = outputFile;
         this.coverPageFileString = coverPageFileString;
         this.commentsThreshold = commentsThreshold;
         this.isCommentsIncluded = isCommentsIncluded;
@@ -100,11 +100,11 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
                 ChapterPageCreator chapterPageCreator = new ChapterPageCreator();
                 chapterPageCreator.createChapterPages(postChapters);
                 if (!coverPageFileString.isEmpty()) {
-                    ebookCreator.createBook(postChapters, outputFileString , coverPageFileString);
+                    ebookCreator.createBook(postChapters, outputFile , coverPageFileString);
                 } else {
-                    ebookCreator.createBook(postChapters, outputFileString , "");
+                    ebookCreator.createBook(postChapters, outputFile , "");
                 }
-                process(outputFileString + " has been created");
+                process(outputFile.getAbsolutePath() + " has been created");
                 progress = 100;
                 setProgress((int)progress);
             } catch (ExcelExtractionException pe){

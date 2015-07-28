@@ -12,7 +12,9 @@ import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
+import java.io.IOException;
 import java.text.ParseException;
+import java.util.logging.Level;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -42,7 +44,7 @@ import org.slf4j.LoggerFactory;
 public class MainFrame extends JFrame {
     private static final long serialVersionUID = 1L;
     private static final Logger logger = LoggerFactory.getLogger(MainFrame.class);
-
+    private CreateEbookSwingWorker createEbookWorker = null;
     public MainFrame() {
         initComponents();
         pack();
@@ -397,12 +399,21 @@ public class MainFrame extends JFrame {
         String coverPageFileString = coverPageTextField.getText();
         logTextArea.setText("");
     	final File inputFile = new File(inputFileString);
+        File outputFile = new File(outputFileString); 
+        outputFile.setWritable(true);
+        
         if (inputFileString.isEmpty()) {
             logger.info("Input data field must be filled before the ebook can be created.");
         } else if (outputFileString.isEmpty()) {
             logger.info("Output data field must be filled before the ebook can be created.");
         } else if (!inputFile.exists()) {
             logger.info("Input file does not exist");
+        } else if (!outputFile.canWrite()) {
+            try {
+                outputFile.createNewFile();
+            } catch (IOException ex) {
+                logger.info(outputFile.getAbsolutePath() + " cannot be written to. Check that the path is not read only.");
+            }
         } else {
             createEbookProgressBar.setValue(0);
             createEbookButton.setEnabled(false);
@@ -417,8 +428,8 @@ public class MainFrame extends JFrame {
             boolean isChildPostsIncluded = includeChildrenPostsCheckBox.isSelected();
             boolean isParentPostsIncluded = includeParentPostsCheckBox.isSelected();
             boolean isThresholdAppliesToChildPosts = includeChildThresholdCommentsCheckBox.isSelected();
-            CreateEbookSwingWorker createEbookWorker = new CreateEbookSwingWorker(logTextArea, createEbookButton, inputFile, 
-                    outputFileString, coverPageFileString, commentsThreshold, isCommentsIncluded, isChildPostsIncluded, 
+            createEbookWorker = new CreateEbookSwingWorker(logTextArea, createEbookButton, inputFile, 
+                    outputFile, coverPageFileString, commentsThreshold, isCommentsIncluded, isChildPostsIncluded, 
                     isParentPostsIncluded, isThresholdAppliesToChildPosts){
             };
             createEbookWorker.addPropertyChangeListener(new PropertyChangeListener() {
