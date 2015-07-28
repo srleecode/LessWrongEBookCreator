@@ -20,7 +20,6 @@ import nl.siegmann.epublib.domain.Resource;
 import nl.siegmann.epublib.epub.EpubWriter;
 /**
  * Class creates ebooks using the html and image files found in the htmlOutput folder
- * @author Satoshi_Nakamoto
  */
 public class EBookCreator {
     private static final Logger logger = LoggerFactory.getLogger(EBookCreator.class);
