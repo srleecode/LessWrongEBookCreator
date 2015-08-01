@@ -14,7 +14,6 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.logging.Level;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -340,7 +339,11 @@ public class MainFrame extends JFrame {
             includeChildrenPostsCheckBox.setEnabled(!includeChildThresholdCommentsCheckBox.isSelected());
         }
     }                                                       
-    private void outputDataSelectFileButtonActionPerformed(ActionEvent evt) {                                                          
+    private void outputDataSelectFileButtonActionPerformed(ActionEvent evt) {  
+        String str1= "";
+        String str2 = "";
+        StringBuilder sb = new StringBuilder(str2);
+        boolean equals = str1.equals(sb.reverse().toString());
         JFileChooser fileChooser = new JFileChooser();
         File workingDirectory = new File(System.getProperty("user.dir"));
         fileChooser.setCurrentDirectory(workingDirectory);
@@ -364,6 +367,7 @@ public class MainFrame extends JFrame {
                 outputDataTextField.setText(selectedFile.getAbsolutePath() + ".epub");
             } 
         } 
+        
     } 
     private void inputDataSelectFileButtonActionPerformed(ActionEvent evt) {                                                          
         JFileChooser fileChooser = new JFileChooser();
@@ -408,40 +412,44 @@ public class MainFrame extends JFrame {
             logger.info("Output data field must be filled before the ebook can be created.");
         } else if (!inputFile.exists()) {
             logger.info("Input file does not exist");
-        } else if (!outputFile.canWrite()) {
-            try {
-                outputFile.createNewFile();
-            } catch (IOException ex) {
-                logger.info(outputFile.getAbsolutePath() + " cannot be written to. Check that the path is not read only.");
-            }
         } else {
-            createEbookProgressBar.setValue(0);
-            createEbookButton.setEnabled(false);
-            try {
-                thresholdTextField.commitEdit();
-            } catch (ParseException e) {
-                logger.error("", e);
-            }
-            
-            int commentsThreshold = (Integer) thresholdTextField.getValue();
-            boolean isCommentsIncluded = includeCommentsCheckBox.isSelected();
-            boolean isChildPostsIncluded = includeChildrenPostsCheckBox.isSelected();
-            boolean isParentPostsIncluded = includeParentPostsCheckBox.isSelected();
-            boolean isThresholdAppliesToChildPosts = includeChildThresholdCommentsCheckBox.isSelected();
-            createEbookWorker = new CreateEbookSwingWorker(logTextArea, createEbookButton, inputFile, 
-                    outputFile, coverPageFileString, commentsThreshold, isCommentsIncluded, isChildPostsIncluded, 
-                    isParentPostsIncluded, isThresholdAppliesToChildPosts){
-            };
-            createEbookWorker.addPropertyChangeListener(new PropertyChangeListener() {
-                @Override
-                public  void propertyChange(PropertyChangeEvent evt) {
-                    if ("progress".equals(evt.getPropertyName())) {
-                        createEbookProgressBar.setValue((Integer)evt.getNewValue());
-                    }
+            if (!outputFile.canWrite()) {
+                try {
+                    outputFile.createNewFile();
+                } catch (IOException ex) {
+                    logger.info(outputFile.getAbsolutePath() + " cannot be written to. Check that the path is not read only.", ex);
                 }
-            });
+            }
+            if (outputFile.canWrite()) {
+                 createEbookProgressBar.setValue(0);
+                createEbookButton.setEnabled(false);
+                try {
+                    thresholdTextField.commitEdit();
+                } catch (ParseException e) {
+                    logger.error("", e);
+                }
 
-            createEbookWorker.execute();
+                int commentsThreshold = (Integer) thresholdTextField.getValue();
+                boolean isCommentsIncluded = includeCommentsCheckBox.isSelected();
+                boolean isChildPostsIncluded = includeChildrenPostsCheckBox.isSelected();
+                boolean isParentPostsIncluded = includeParentPostsCheckBox.isSelected();
+                boolean isThresholdAppliesToChildPosts = includeChildThresholdCommentsCheckBox.isSelected();
+                createEbookWorker = new CreateEbookSwingWorker(logTextArea, createEbookButton, inputFile, 
+                        outputFile, coverPageFileString, commentsThreshold, isCommentsIncluded, isChildPostsIncluded, 
+                        isParentPostsIncluded, isThresholdAppliesToChildPosts){
+                };
+                createEbookWorker.addPropertyChangeListener(new PropertyChangeListener() {
+                    @Override
+                    public  void propertyChange(PropertyChangeEvent evt) {
+                        if ("progress".equals(evt.getPropertyName())) {
+                            createEbookProgressBar.setValue((Integer)evt.getNewValue());
+                        }
+                    }
+                });
+
+                createEbookWorker.execute();
+            }
+
         } 
     }                                                 
     
@@ -474,6 +482,7 @@ public class MainFrame extends JFrame {
 
         /* Create and display the form */
         EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new MainFrame().setVisible(true);
             }

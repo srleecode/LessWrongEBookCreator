@@ -26,7 +26,7 @@ public class OvercomingBiasPostSectionExtractor extends PostSectionExtractor{
                 overcomingBiasPostContentSB.append("<a id=\"").append(linkTitle).append("_comments\">").append(newLine);
                 if (commentElements.size() > 0) {
                     if (!nextPostLinkTitle.isEmpty()) {
-                        overcomingBiasPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
+                        overcomingBiasPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Next Post</a><br>").append(newLine);
                     }
                     overcomingBiasPostContentSB.append(getCommentsString(commentElements));
                 }

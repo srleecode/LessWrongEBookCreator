@@ -42,19 +42,21 @@ public final class PostScraper {
                     removeComments(doc);
                     postContentSB.append("<a id=\"").append(linkTitle).append("\"/>").append(newLine);
                     postContentSB.append("<h2><a href=\"").append(postExtractionDetails.getUrl()).append("\">").append(postExtractionDetails.getTitle()).append("</a></h2>");
-                    postContentSB.append("<a href=\"summary.html#").append(linkTitle).append("_post_summary\">Summary</a>" );
+                    postContentSB.append("<a href=\"summaryTOC.html#").append(linkTitle).append("_post_summary\">Summary</a>" );
                     if (!postExtractionDetails.getNextPost().isEmpty()) {
                         postContentSB.append(" - <a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Next Post</a>");
                     }
                     
                     PostSectionExtractor postSectionExtrator = null;
                     
-                    if (siteType == SiteType.LESS_WRONG) {
+                    if (siteType == SiteType.LESS_WRONG || siteType == SiteType.OVERCOMING_BIAS) {
                         if (postExtractionDetails.isCommentsIncluded()) {
                             postContentSB.append(" - <a href=\"#").append(linkTitle).append("_comments\">Comments</a><br><br>").append(newLine);
                         } else {
                             postContentSB.append("<br><br>").append(newLine);
                         }
+                    }
+                    if (siteType == SiteType.LESS_WRONG) {
                         postSectionExtrator = new LessWrongPostSectionExtractor();
                     } else if (siteType == SiteType.YUDKOWSY) {
                         postSectionExtrator = new YudowskyPostSectionExtractor();

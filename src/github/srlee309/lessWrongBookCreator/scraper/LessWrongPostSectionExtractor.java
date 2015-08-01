@@ -56,7 +56,7 @@ public final class LessWrongPostSectionExtractor extends PostSectionExtractor{
             }
             if (numComments > 0) {
                 if (!nextPostLinkTitle.isEmpty()) {
-                    lessWrongPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Skip Comments</a><br>").append(newLine);
+                    lessWrongPostContentSB.append("<a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Next Post</a><br>").append(newLine);
                 }
                 lessWrongPostContentSB.append(getStringOfIncludedComments(postExtractionDetails, comments));
             }

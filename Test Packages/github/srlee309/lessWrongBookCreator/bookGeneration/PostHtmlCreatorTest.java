@@ -1,6 +1,5 @@
 package github.srlee309.lessWrongBookCreator.bookGeneration;
 
-import github.srlee309.lessWrongBookCreator.bookGeneration.PostHtmlCreator;
 import github.srlee309.lessWrongBookCreator.scraper.PostSection;
 import java.io.File;
 import java.util.ArrayList;

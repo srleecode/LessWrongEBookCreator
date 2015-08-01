@@ -41,7 +41,7 @@ public final class PostSummarySection {
         sb.append("<p>").append(summary).append("</p>").append(newLine);
         sb.append("<a href=\"").append(linkTitle).append(".html#").append(linkTitle).append("\">Read post</a> ");
         SiteType siteType = new SiteTypeExtractor().getSiteTypeFromUrlString(url);
-        if (siteType == SiteType.LESS_WRONG) {
+        if (siteType == SiteType.LESS_WRONG || siteType == SiteType.OVERCOMING_BIAS) {
             sb.append("<a href=\"").append(linkTitle).append(".html#").append(linkTitle).append("_comments\">Read comments</a>").append(newLine);
         }
         sb.append("<hr>").append(newLine);

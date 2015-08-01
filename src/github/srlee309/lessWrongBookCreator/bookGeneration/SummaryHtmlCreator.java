@@ -24,6 +24,6 @@ public final class SummaryHtmlCreator extends HtmlOutputFileCreator{
         }
         summaryPageSB.append("</body>").append(newLine).append("</html>");
         createHtmlOutputFolderIfNotExists();
-        writeStringToFile(htmlOutputFilePath + "//summary.html", summaryPageSB.toString());
+        writeStringToFile(htmlOutputFilePath + "//summaryTOC.html", summaryPageSB.toString());
     }
 }

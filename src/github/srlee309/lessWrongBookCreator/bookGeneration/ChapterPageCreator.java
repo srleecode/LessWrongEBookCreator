@@ -8,20 +8,25 @@ import java.util.HashSet;
  * Creates html pages for passed in list of {@link PostChapter}s
  */
 public class ChapterPageCreator extends HtmlOutputFileCreator{
-    public void createChapterPages(ArrayList<PostChapter> postChapters) {
+    /**
+     * Creates html file of title for each PostChapter
+     * @param postChapters which includes chapter titles to use to create the files
+     */
+    public void createChapterPageFiles(ArrayList<PostChapter> postChapters) {
         HashSet<String> createdChapters = new HashSet<String>();
+        createHtmlOutputFolderIfNotExists();
         for(PostChapter postChapter : postChapters) {
             if (!postChapter.getBookName().isEmpty() && !createdChapters.contains(postChapter.getBookName())) {
-                createChapterPage(postChapter.getBookName(), ChapterType.BOOK);
+                createChapterPageFile(postChapter.getBookName(), ChapterType.BOOK);
                 createdChapters.add(postChapter.getBookName());
             }
             if (!postChapter.getSequenceName().isEmpty() && !createdChapters.contains(postChapter.getSequenceName())) {
-                createChapterPage(postChapter.getSequenceName(), ChapterType.SEQUENCE);
+                createChapterPageFile(postChapter.getSequenceName(), ChapterType.SEQUENCE);
                 createdChapters.add(postChapter.getSequenceName());
             }
         }
     }
-    private void createChapterPage(String chapterTitle, ChapterType chapterType) {
+    private void createChapterPageFile(String chapterTitle, ChapterType chapterType) {
         String linkTitle = chapterTitle.replaceAll("\\W+", "");
         StringBuilder chapterPageSB = new StringBuilder();
         String newLine = System.getProperty("line.separator");
@@ -41,7 +46,6 @@ public class ChapterPageCreator extends HtmlOutputFileCreator{
            chapterPageSB .append("_sequence_summary\">Go To Summary</a>").append(newLine);
         }
         chapterPageSB.append("</body>").append(newLine).append("</html>");
-        createHtmlOutputFolderIfNotExists();
         writeStringToFile(htmlOutputFilePath + "//" + linkTitle + ".html", chapterPageSB.toString());
     }
 }

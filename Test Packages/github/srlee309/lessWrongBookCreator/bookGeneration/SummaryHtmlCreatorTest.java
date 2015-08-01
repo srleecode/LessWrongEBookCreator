@@ -1,6 +1,5 @@
 package github.srlee309.lessWrongBookCreator.bookGeneration;
 
-import github.srlee309.lessWrongBookCreator.bookGeneration.SummaryHtmlCreator;
 import github.srlee309.lessWrongBookCreator.scraper.BookSummarySection;
 import github.srlee309.lessWrongBookCreator.scraper.PostSummarySection;
 import github.srlee309.lessWrongBookCreator.scraper.SequenceSummarySection;

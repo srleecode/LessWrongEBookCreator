@@ -18,6 +18,7 @@ import github.srlee309.lessWrongBookCreator.utilities.DirectoryPurger;
 import github.srlee309.lessWrongBookCreator.utilities.InternetConfig;
 import github.srlee309.lessWrongBookCreator.utilities.SubmitOrderedCompletionService;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -64,16 +65,21 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
     
     @Override
     protected Object doInBackground() throws Exception {
-       boolean connectionWorking = setUpInternetConntection();
-        if (connectionWorking) {
+        boolean connectionWorking = setUpInternetConntection();
+        boolean cleanedHtmlOutputDir = false;
+        try {
+            cleanUpHtmlOutputDir();
+            cleanedHtmlOutputDir = true;
+        } catch (IOException e) {
+            logger.error("Unable to remove content in Html Output directory. Check permissions right on this folder", e);
+        }
+        if (connectionWorking && cleanedHtmlOutputDir) {
             progress = 5;
             process("Internet connection is working" + newLine);
             setProgress((int)progress);
             
             SummaryHtmlCreator summaryHtmlCreator = new SummaryHtmlCreator();
             EBookCreator ebookCreator = new EBookCreator();
-            
-            cleanUpHtmlOutputDir();
             
             process("Reading summary data from: " + inputFile + newLine);
             SummaryFileReader inputFileReader = new SummaryFileReader();
@@ -98,7 +104,7 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
                 postHtmlCreator.createPostsPages(postSections);
                 
                 ChapterPageCreator chapterPageCreator = new ChapterPageCreator();
-                chapterPageCreator.createChapterPages(postChapters);
+                chapterPageCreator.createChapterPageFiles(postChapters);
                 if (!coverPageFileString.isEmpty()) {
                     ebookCreator.createBook(postChapters, outputFile , coverPageFileString);
                 } else {
@@ -157,7 +163,7 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
     /**
      * Create the folder htmlOutput if it doesn't exist otherwise remove all files in the folder
      */
-    private void cleanUpHtmlOutputDir() {
+    private void cleanUpHtmlOutputDir() throws IOException {
         File htmlOutputDir = new File("htmlOutput");
         if (!htmlOutputDir.exists()) {
             try{

@@ -1,7 +1,5 @@
 package github.srlee309.lessWrongBookCreator.scraper;
 
-import github.srlee309.lessWrongBookCreator.scraper.OvercomingBiasPostSectionExtractor;
-import github.srlee309.lessWrongBookCreator.scraper.PostExtractionDetails;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;

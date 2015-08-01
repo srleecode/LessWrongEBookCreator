@@ -13,14 +13,11 @@ public final class DirectoryPurger {
     /**
      * Removes all files and subFiles in the given directory
      * @param dir to purge
+     * @throws IOException if dir cannot be cleaned
      */
-    public void purgeDirectory(File dir) {
+    public void purgeDirectory(File dir) throws IOException {
         if (dir != null && dir.isDirectory()) {
-            try {
-                FileUtils.cleanDirectory(dir);
-            } catch (IOException ex) {
-                logger.error("Unable to remove folder " + dir.getName(), ex);
-            }
+            FileUtils.cleanDirectory(dir);
         }
     }
 }

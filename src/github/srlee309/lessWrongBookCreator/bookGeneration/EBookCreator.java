@@ -73,7 +73,7 @@ public class EBookCreator {
                 book.setCoverPage(new Resource(new FileInputStream(coverPageFile.getAbsolutePath()), coverPageFile.getName()));
             }
             
-            book.addSection("Summary", new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//summary.html"), "summary.html"));
+            book.addSection("Summary", new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//summaryTOC.html"), "summaryTOC.html"));
             for (File selectedFile : getImageFiles("htmlOutput")) {  
                     book.getResources().add(new Resource(new FileInputStream(selectedFile.getAbsolutePath()), selectedFile.getName()));
             } 

@@ -1,9 +1,5 @@
 package github.srlee309.lessWrongBookCreator.scraper;
 
-import github.srlee309.lessWrongBookCreator.scraper.ExcelExtractionException;
-import github.srlee309.lessWrongBookCreator.scraper.BookSummarySection;
-import github.srlee309.lessWrongBookCreator.scraper.SequenceSummarySection;
-import github.srlee309.lessWrongBookCreator.scraper.PostSummarySection;
 import github.srlee309.lessWrongBookCreator.excelReader.SummaryFileReader;
 import java.io.File;
 import java.util.ArrayList;
