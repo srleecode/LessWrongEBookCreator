@@ -23,7 +23,11 @@ import nl.siegmann.epublib.epub.EpubWriter;
  */
 public class EBookCreator {
     private static final Logger logger = LoggerFactory.getLogger(EBookCreator.class);
+    private final String currentDirPath;
 
+    public EBookCreator() {
+        this.currentDirPath = new File(".").getAbsolutePath();
+    }
     /**
      * @return imageFiles - in the htmlOutput folder. Non-html and non-directory files are taken to be image files
      */
@@ -59,7 +63,6 @@ public class EBookCreator {
             book.getMetadata().addTitle(bookTitle);
             book.getMetadata().addAuthor(new Author("Less Wrong"));
             book.getMetadata().addDate(new Date(new java.util.Date()));
-            
             book.getResources().add(new Resource(EBookCreator.class.getResourceAsStream("/seperator.gif"), "seperator.gif"));
             
             if (!coverPageFilePath.isEmpty()) {
@@ -67,15 +70,16 @@ public class EBookCreator {
                 File coverPageFolder = coverPageFile.getParentFile();
                 if(coverPageFolder.isDirectory()){
                     for (File selectedFile : getImageFiles(coverPageFolder.getAbsolutePath())) {  
-                        book.getResources().add(new Resource(new FileInputStream(selectedFile), selectedFile.getName()));
+                        addResource(book, selectedFile, selectedFile.getName());
                     } 
                 }
-                book.setCoverPage(new Resource(new FileInputStream(coverPageFile.getAbsolutePath()), coverPageFile.getName()));
+                setCoverPage(book,coverPageFile, coverPageFile.getName());
             }
-            
-            book.addSection("Summary", new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//summaryTOC.html"), "summaryTOC.html"));
+            File summaryHtmlFile = new File(currentDirPath + "//htmlOutput//summaryTOC.html");
+            addSection(book, summaryHtmlFile, "summaryTOC.html", "Summary");
+          
             for (File selectedFile : getImageFiles("htmlOutput")) {  
-                    book.getResources().add(new Resource(new FileInputStream(selectedFile.getAbsolutePath()), selectedFile.getName()));
+                    addResource(book, selectedFile, selectedFile.getName());
             } 
 
             String currBook = "";
@@ -83,23 +87,86 @@ public class EBookCreator {
             for (PostChapter postChapter : postChapters) {
                 if (!currBook.equals(postChapter.getBookName())) {
                     String BookFileTitle = postChapter.getBookName().replaceAll("\\W+", "");
-                    book.addSection(postChapter.getBookName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + BookFileTitle + ".html"), BookFileTitle +".html"));
+                    File bookFile = new File(currentDirPath+"//htmlOutput//" + BookFileTitle + ".html");
+                    addSection(book, bookFile, BookFileTitle +".html", postChapter.getBookName());
                     currBook = postChapter.getBookName();
                 }
                 if (!currSequence.equals(postChapter.getSequenceName())) {
                     String sequenceFileTitle = postChapter.getSequenceName().replaceAll("\\W+", "");
-                    book.addSection(postChapter.getSequenceName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + sequenceFileTitle + ".html"), sequenceFileTitle +".html"));
+                    File sequenceFile = new File(currentDirPath+"//htmlOutput//" + sequenceFileTitle + ".html");
+                    addSection(book, sequenceFile, sequenceFileTitle +".html", postChapter.getSequenceName());
                     currSequence = postChapter.getSequenceName();
                 }
                 String postFileTitle = postChapter.getPostName().replaceAll("\\W+", "");
-                book.addSection(postChapter.getPostName(), new Resource(new FileInputStream(new File(".").getAbsolutePath()+"//htmlOutput//" + postFileTitle + ".html"), postFileTitle +".html"));
+                File postFile = new File(currentDirPath+"//htmlOutput//" + postFileTitle + ".html");
+                addSection(book, postFile, postFileTitle +".html", postChapter.getPostName());
             }
             EpubWriter epubWriter = new EpubWriter();
-            epubWriter.write(book, new FileOutputStream(outputFile));
+            FileOutputStream out = new FileOutputStream(outputFile);
+            epubWriter.write(book, out);
+            out.close();
         } catch (FileNotFoundException e) {
             logger.error("", e);
         } catch (IOException e) {
             logger.error("", e);
+        }
+    }
+    private void setCoverPage(Book book, File file, String resourceTitle) {
+        FileInputStream in = null;
+        try {
+            in = new FileInputStream(file);
+            book.setCoverPage(new Resource(in, resourceTitle));
+        } catch (FileNotFoundException ex) {
+            logger.error("", ex);
+        } catch (IOException ex) {
+            logger.error("", ex);
+        } finally {
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (IOException ex) {
+               logger.error("", ex);
+            }
+        }
+    }
+    
+    private void addResource(Book book, File file, String resourceTitle) {
+        FileInputStream in = null;
+        try {
+            in = new FileInputStream(file);
+            book.getResources().add(new Resource(in, resourceTitle));
+        } catch (FileNotFoundException ex) {
+            logger.error("", ex);
+        } catch (IOException ex) {
+            logger.error("", ex);
+        } finally {
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (IOException ex) {
+               logger.error("", ex);
+            }
+        }
+    }
+    private void addSection (Book book, File file, String resourceTitle, String sectionTitle) {
+        FileInputStream in = null;
+        try {
+            in = new FileInputStream(file);
+            book.addSection(sectionTitle, new Resource(in, resourceTitle));
+        } catch (FileNotFoundException ex) {
+            logger.error("", ex);
+        } catch (IOException ex) {
+            logger.error("", ex);
+        } finally {
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (IOException ex) {
+               logger.error("", ex);
+            }
         }
     }
 }

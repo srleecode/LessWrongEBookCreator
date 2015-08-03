@@ -1,5 +1,7 @@
 package github.srlee309.lessWrongBookCreator.scraper;
-
+/**
+ * Data class to define book and sequence each post belongs to
+ */
 public class PostChapter {
     private final String bookName;
     private final String sequenceName;

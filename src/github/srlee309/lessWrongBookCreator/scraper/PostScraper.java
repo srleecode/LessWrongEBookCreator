@@ -1,5 +1,8 @@
 package github.srlee309.lessWrongBookCreator.scraper;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.logging.Level;
 import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -30,55 +33,78 @@ public final class PostScraper {
             StringBuilder postContentSB = new StringBuilder();
             String linkTitle = postExtractionDetails.getTitle().replaceAll("\\W+", "");
             String nextPostLinkTitle = postExtractionDetails.getNextPost().replaceAll("\\W+", "");
-            try{
-                //timeout set to 30 seconds. Also, had to increase max body size as top 50 posts are around 1.5 MB otherwise they get cut off and you miss half the comments
-                Response rsp = Jsoup.connect(postExtractionDetails.getUrl()).timeout(30*1000).ignoreContentType(true).maxBodySize(100*1024*1024).ignoreHttpErrors(true).userAgent("Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0").referrer("http://www.google.com").followRedirects(true).execute(); 
-                Document doc = rsp.parse();
-                if (doc == null) {
-                    rsp = Jsoup.connect(postExtractionDetails.getUrl()).timeout(30*1000).ignoreContentType(true).maxBodySize(100*1024*1024).ignoreHttpErrors(true).userAgent("Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0").referrer("http://www.google.com").followRedirects(true).execute(); 
-                    doc = rsp.parse();
+           
+            try {
+                //
+                new URL("jar:file://dummy.jar!/").openConnection().setDefaultUseCaches(false);
+            } catch (MalformedURLException ex) {
+                logger.error("",ex);
+            } catch (IOException ex) {
+                logger.error("",ex);
+            }
+            
+            //timeout set to 30 seconds. Also, had to increase max body size as top 50 posts are around 1.5 MB otherwise they get cut off and you miss half the comments
+            Response rsp = null; 
+            int statusCode = 0;
+            try {
+                rsp = Jsoup.connect(postExtractionDetails.getUrl()).timeout(30*1000).ignoreContentType(true).maxBodySize(100*1024*1024).ignoreHttpErrors(true).userAgent("Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0").referrer("http://www.google.com").followRedirects(true).execute();
+                statusCode = rsp.statusCode();
+                if (statusCode != 200) {
+                    rsp = Jsoup.connect(postExtractionDetails.getUrl()).timeout(120*1000).ignoreContentType(true).maxBodySize(100*1024*1024).ignoreHttpErrors(true).userAgent("Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0").referrer("http://www.google.com").followRedirects(true).execute();
+                    statusCode = rsp.statusCode();
                 }
-                if (doc != null) {
-                    removeComments(doc);
-                    postContentSB.append("<a id=\"").append(linkTitle).append("\"/>").append(newLine);
-                    postContentSB.append("<h2><a href=\"").append(postExtractionDetails.getUrl()).append("\">").append(postExtractionDetails.getTitle()).append("</a></h2>");
-                    postContentSB.append("<a href=\"summaryTOC.html#").append(linkTitle).append("_post_summary\">Summary</a>" );
-                    if (!postExtractionDetails.getNextPost().isEmpty()) {
-                        postContentSB.append(" - <a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Next Post</a>");
-                    }
-                    
-                    PostSectionExtractor postSectionExtrator = null;
-                    
-                    if (siteType == SiteType.LESS_WRONG || siteType == SiteType.OVERCOMING_BIAS) {
-                        if (postExtractionDetails.isCommentsIncluded()) {
-                            postContentSB.append(" - <a href=\"#").append(linkTitle).append("_comments\">Comments</a><br><br>").append(newLine);
-                        } else {
-                            postContentSB.append("<br><br>").append(newLine);
+            } catch (IOException ex) {
+                logger.error("Connection TimeOut for url " + postExtractionDetails.getUrl() + newLine,ex);
+            }
+            
+            if(statusCode == 200) {
+                try{    
+                    Document doc = rsp.parse();
+
+                    if (doc != null) {
+                        removeComments(doc);
+                        postContentSB.append("<a id=\"").append(linkTitle).append("\"/>").append(newLine);
+                        postContentSB.append("<h2><a href=\"").append(postExtractionDetails.getUrl()).append("\">").append(postExtractionDetails.getTitle()).append("</a></h2>");
+                        postContentSB.append("<a href=\"summaryTOC.html#").append(linkTitle).append("_post_summary\">Summary</a>" );
+                        if (!postExtractionDetails.getNextPost().isEmpty()) {
+                            postContentSB.append(" - <a href=\"").append(nextPostLinkTitle).append(".html#").append(nextPostLinkTitle).append("\">Next Post</a>");
                         }
-                    }
-                    if (siteType == SiteType.LESS_WRONG) {
-                        postSectionExtrator = new LessWrongPostSectionExtractor();
-                    } else if (siteType == SiteType.YUDKOWSY) {
-                        postSectionExtrator = new YudowskyPostSectionExtractor();
-                    } else if (siteType == SiteType.LESS_WRONG_WIKI) {
-                        postSectionExtrator = new WikiPostSectionExtractor();
-                    } else if (siteType == SiteType.OVERCOMING_BIAS) {
-                        postSectionExtrator = new OvercomingBiasPostSectionExtractor();
+
+                        PostSectionExtractor postSectionExtrator = null;
+
+                        if (siteType == SiteType.LESS_WRONG || siteType == SiteType.OVERCOMING_BIAS) {
+                            if (postExtractionDetails.isCommentsIncluded()) {
+                                postContentSB.append(" - <a href=\"#").append(linkTitle).append("_comments\">Comments</a><br><br>").append(newLine);
+                            } else {
+                                postContentSB.append("<br><br>").append(newLine);
+                            }
+                        }
+                        if (siteType == SiteType.LESS_WRONG) {
+                            postSectionExtrator = new LessWrongPostSectionExtractor();
+                        } else if (siteType == SiteType.YUDKOWSY) {
+                            postSectionExtrator = new YudowskyPostSectionExtractor();
+                        } else if (siteType == SiteType.LESS_WRONG_WIKI) {
+                            postSectionExtrator = new WikiPostSectionExtractor();
+                        } else if (siteType == SiteType.OVERCOMING_BIAS) {
+                            postSectionExtrator = new OvercomingBiasPostSectionExtractor();
+                        } else {
+                            logger.error("Site not recognised " + postExtractionDetails.getUrl() + ". Is it a less wrong site?" + newLine);
+                        }
+
+                        if (postSectionExtrator != null) {
+                            postContentSB.append(postSectionExtrator.getPostSectionString(postExtractionDetails, doc));
+                        }
+                        postContentSB.append("<a href=\"#").append(linkTitle).append("\">Go To Start of Post</a><br>").append(newLine);
                     } else {
-                        logger.error("Site not recognised " + postExtractionDetails.getUrl() + ". Is it a less wrong site?");
+                        logger.error("Unable to connect to site " + postExtractionDetails.getUrl() + newLine);
                     }
-                    
-                    if (postSectionExtrator != null) {
-                        postContentSB.append(postSectionExtrator.getPostSectionString(postExtractionDetails, doc));
-                    }
-                    postContentSB.append("<a href=\"#").append(linkTitle).append("\">Go To Start of Post</a><br>").append(newLine);
-                } else {
-                    logger.error("Unable to connect to site " + postExtractionDetails.getUrl());
+                } catch (IOException e) {
+                    logger.error("IOException: Unable to connect to site " + postExtractionDetails.getUrl() + newLine, e);
+                } catch(IllegalArgumentException e) {
+                    logger.error("IllegalArgumentException: Unable to connect to site " + postExtractionDetails.getUrl() + newLine, e);
                 }
-            } catch (IOException e) {
-                logger.error("Unable to connect to site " + postExtractionDetails.getUrl(), e);
-            } catch(IllegalArgumentException e) {
-                logger.error("Unable to connect to site " + postExtractionDetails.getUrl(), e);
+            } else {
+                logger.error("Unable to connect to site due to incorrect status code " + postExtractionDetails.getUrl() + newLine);
             }
             return new PostSection(postExtractionDetails.getTitle(), postExtractionDetails.getUrl(), postContentSB.toString());
         } else {

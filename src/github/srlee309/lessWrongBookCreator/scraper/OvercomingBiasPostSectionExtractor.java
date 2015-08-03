@@ -5,7 +5,9 @@ import java.util.regex.Pattern;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
+/**
+ * Extracts String of scraped Overcoming bias page
+ */
 public class OvercomingBiasPostSectionExtractor extends PostSectionExtractor{
     @Override
     public String getPostSectionString(PostExtractionDetails postExtractionDetails, Document doc) {

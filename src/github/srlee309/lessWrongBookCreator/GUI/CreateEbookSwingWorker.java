@@ -15,7 +15,6 @@ import github.srlee309.lessWrongBookCreator.scraper.PostSection;
 import github.srlee309.lessWrongBookCreator.scraper.PostSummarySection;
 import github.srlee309.lessWrongBookCreator.scraper.SequenceSummarySection;
 import github.srlee309.lessWrongBookCreator.utilities.DirectoryPurger;
-import github.srlee309.lessWrongBookCreator.utilities.InternetConfig;
 import github.srlee309.lessWrongBookCreator.utilities.SubmitOrderedCompletionService;
 import java.io.File;
 import java.io.IOException;
@@ -65,17 +64,16 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
     
     @Override
     protected Object doInBackground() throws Exception {
-        boolean connectionWorking = setUpInternetConntection();
         boolean cleanedHtmlOutputDir = false;
+        process("Cleaning htmlOutput folder ..." + newLine);
         try {
             cleanUpHtmlOutputDir();
             cleanedHtmlOutputDir = true;
         } catch (IOException e) {
             logger.error("Unable to remove content in Html Output directory. Check permissions right on this folder", e);
         }
-        if (connectionWorking && cleanedHtmlOutputDir) {
+        if (cleanedHtmlOutputDir) {
             progress = 5;
-            process("Internet connection is working" + newLine);
             setProgress((int)progress);
             
             SummaryHtmlCreator summaryHtmlCreator = new SummaryHtmlCreator();
@@ -144,27 +142,11 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
             process(logStrings);
     }
     /**
-     * Attempt to connect to the internet (www.google.com), set up proxy setting if unable to and then retry.
-     * @return isConnectionSuccessful - return true if able to connect to the internet
-     */
-    private boolean setUpInternetConntection() {
-        process("Checking internet connection is working ..." + newLine);
-        boolean connectionWorking = true;
-        InternetConfig netChecker = new InternetConfig();
-        if (!netChecker.isInternetConnectionWorking()){
-            netChecker.setProxySettings();
-            if (!netChecker.isInternetConnectionWorking()){
-                connectionWorking = false;
-                process("Connection to the internet was unable to be setup. Google could not be connected to");
-            }
-        }
-        return connectionWorking;
-    }
-    /**
      * Create the folder htmlOutput if it doesn't exist otherwise remove all files in the folder
      */
     private void cleanUpHtmlOutputDir() throws IOException {
         File htmlOutputDir = new File("htmlOutput");
+        
         if (!htmlOutputDir.exists()) {
             try{
                 htmlOutputDir.mkdir();
@@ -217,9 +199,13 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
                 PostSection postSection = result.get();
                 progress += (double)75 / postsExtractionDetails.size();
                 if (postSection != null) {
-                    process("Scraped page " + postSection.getUrl() + newLine);
-                    setProgress((int)progress);
-                    postSections.add(postSection);
+                    if (!postSection.getHtmlContent().isEmpty()) {
+                        process("Scraped page " + postSection.getUrl() + newLine);
+                        setProgress((int)progress);
+                        postSections.add(postSection);
+                    } else {
+                        process("There was a problem scraping the page " + postSection.getUrl() + newLine);
+                    }
                 }
             }
         } catch (InterruptedException e) {
