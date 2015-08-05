@@ -39,7 +39,7 @@ public class ChapterPageCreator extends HtmlOutputFileCreator{
         chapterPageSB.append("<h1>").append(chapterTitle).append("</h1>").append(newLine);
         chapterPageSB.append("<img src=\"seperator.gif\">").append(newLine);
         chapterPageSB.append("</div>").append(newLine);
-        chapterPageSB.append("<a href=\"summary.html#").append(linkTitle);
+        chapterPageSB.append("<a href=\"summaryTOC.html#").append(linkTitle);
         if (chapterType == ChapterType.BOOK) {
            chapterPageSB .append("_book_summary\">Go To Summary</a>").append(newLine);
         } else if (chapterType == ChapterType.SEQUENCE) {

@@ -37,7 +37,7 @@ public final class PostSummarySection {
         String newLine = System.getProperty("line.separator");
         String linkTitle = title.replaceAll("\\W+", "");
         sb.append("<a id=\"").append(linkTitle).append("_post_summary\"></a>").append(newLine);
-        sb.append("<h4><a href=\"").append(url).append("\">").append(title).append("</a></h4>").append(newLine);
+        sb.append("<h4>").append(title).append("</h4>").append(newLine);
         sb.append("<p>").append(summary).append("</p>").append(newLine);
         sb.append("<a href=\"").append(linkTitle).append(".html#").append(linkTitle).append("\">Read post</a> ");
         SiteType siteType = new SiteTypeExtractor().getSiteTypeFromUrlString(url);

@@ -15,7 +15,6 @@ public class YudowskyPostSectionExtractorTest {
         Document doc =  Jsoup.parse(htmlString);
         YudowskyPostSectionExtractor instance = new YudowskyPostSectionExtractor();
         String result = instance.getPostSectionString(postExtractionDetails, doc);
-        FileUtils.writeStringToFile(new File("Yudkowsky - The Simple Truth.txt"), result);
         String expResult = FileUtils.readFileToString(new File(this.getClass().getResource("/Yudkowsky - The Simple Truth Post Section.txt").toURI()));
         
         assertTrue(expResult.trim().equals(result.trim()));

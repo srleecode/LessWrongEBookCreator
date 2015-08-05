@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class SummaryHtmlCreatorTest {
     @Test
     public void createSummaryPage_BookSummarySection_OutputHtmlAsExpected() throws Exception{
-        String expectedHtmlString =  FileUtils.readFileToString(new File(this.getClass().getResource("/summary.html").toURI()));
+        String expectedHtmlString =  FileUtils.readFileToString(new File(this.getClass().getResource("/summaryTOC.html").toURI()));
         SummaryHtmlCreator summaryHtmlCreator = new SummaryHtmlCreator();
         ArrayList<PostSummarySection> expectedPostSections = new ArrayList<PostSummarySection>();
         expectedPostSections.add(new PostSummarySection("What Do We Mean By \"Rationality\"?", "http://lesswrong.com/lw/31/what_do_we_mean_by_rationality/", "When we talk about rationality, we're generally talking about either epistemic rationality (systematic methods of finding out the truth) or instrumental rationality (systematic methods of making the world more like we would like it to be). We can discuss these in the forms of probability theory and decision theory, but this doesn't fully cover the difficulty of being rational as a human. There is a lot more to rationality than just the formal theories."));
@@ -27,7 +27,7 @@ public class SummaryHtmlCreatorTest {
                                     "</ul>";
         bookSections.add(new BookSummarySection("Map and Territory", bookSectionSummary, expectedSequenceSections));
         summaryHtmlCreator.createSummaryPage(bookSections);
-        String resultHtmlString = FileUtils.readFileToString(new File("htmlOutput/summary.html"));
+        String resultHtmlString = FileUtils.readFileToString(new File("htmlOutput/summaryTOC.html"));
         assertTrue(resultHtmlString.equals(expectedHtmlString));
     }
     
