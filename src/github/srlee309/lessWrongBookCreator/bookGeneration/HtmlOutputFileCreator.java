@@ -32,7 +32,7 @@ public abstract class HtmlOutputFileCreator {
     }
     protected void writeStringToFile(String filePath, String fileContent) {
         try {
-            FileUtils.writeStringToFile(new File(filePath), fileContent);
+            FileUtils.writeStringToFile(new File(filePath), fileContent, "UTF-8");
         } catch ( IOException ex) {
             logger.error("", ex);
         }
