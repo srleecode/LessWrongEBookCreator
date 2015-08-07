@@ -20,7 +20,7 @@ public class PostHtmlCreatorTest {
         PostHtmlCreator instance = new PostHtmlCreator();
         instance.createPostsPages(postSections);
         String resultHtmlString =  FileUtils.readFileToString(new File("htmlOutput/FeelingRational.html"));
-
+    
         assertTrue(resultHtmlString.equals(expectedHtmlString));
     }
     
