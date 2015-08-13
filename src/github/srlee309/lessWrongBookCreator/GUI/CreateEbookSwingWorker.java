@@ -1,3 +1,19 @@
+/* 
+ * Copyright (C) 2015 Scott Lee
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 package github.srlee309.lessWrongBookCreator.GUI;
 
 import github.srlee309.lessWrongBookCreator.bookGeneration.ChapterPageCreator;
@@ -167,13 +183,30 @@ public class CreateEbookSwingWorker extends SwingWorker<Object, String>{
                 for (PostSummarySection postSummarySection : sequenceSummarySection.getPostSummarySections()) {
                     PostExtractionDetails postExtractionDetails = null;
                     if (postIdx + 1 < postChapters.size()) {
-                        postExtractionDetails = new PostExtractionDetails(postSummarySection.getTitle(), sequenceSummarySection.getTitle(), 
-                            bookSummarySection.getTitle(), postSummarySection.getUrl(), postChapters.get(postIdx + 1).getPostName(), isCommentsIncluded,
-                            commentsThreshold, isChildPostsIncluded, isParentPostsIncluded, isThresholdAppliesToChildPosts);
+                        postExtractionDetails = new PostExtractionDetails.Builder()
+                                .title(postSummarySection.getTitle())
+                                .sequence(sequenceSummarySection.getTitle())
+                                .book(bookSummarySection.getTitle())
+                                .url(postSummarySection.getUrl())
+                                .nextPost(postChapters.get(postIdx + 1).getPostName())
+                                .commentsIncluded(isCommentsIncluded)
+                                .commentsThreshold(commentsThreshold)
+                                .thresholdAppliesToChildPosts(isThresholdAppliesToChildPosts)
+                                .childPostsIncluded(isChildPostsIncluded)
+                                .parentPostsIncluded(isParentPostsIncluded)
+                                .build();
                     } else {
-                        postExtractionDetails = new PostExtractionDetails(postSummarySection.getTitle(), sequenceSummarySection.getTitle(), 
-                            bookSummarySection.getTitle(), postSummarySection.getUrl(), "", isCommentsIncluded,
-                            commentsThreshold, isChildPostsIncluded, isParentPostsIncluded, isThresholdAppliesToChildPosts);
+                        postExtractionDetails = new PostExtractionDetails.Builder()
+                                .title(postSummarySection.getTitle())
+                                .sequence(sequenceSummarySection.getTitle())
+                                .book(bookSummarySection.getTitle())
+                                .url(postSummarySection.getUrl())
+                                .commentsIncluded(isCommentsIncluded)
+                                .commentsThreshold(commentsThreshold)
+                                .thresholdAppliesToChildPosts(isThresholdAppliesToChildPosts)
+                                .childPostsIncluded(isChildPostsIncluded)
+                                .parentPostsIncluded(isParentPostsIncluded)
+                                .build();
                     }
                     postIdx++;
                     postsExtractionDetails.add(postExtractionDetails);
